@@ -1,4 +1,4 @@
-# PC Spec Checker v3.0
+# pc-spec_checker-kit v3.0
 
 **더블클릭 한 번으로 내 PC의 모든 것을 확인하세요.**
 
@@ -12,7 +12,7 @@
 
 ## 이게 뭔가요?
 
-PC Spec Checker는 `.bat` 파일 **하나**로 내 Windows PC를 스캔해서 보여주는 도구입니다.
+pc-spec_checker-kit는 `.bat` 파일 **하나**로 내 Windows PC를 스캔해서 보여주는 도구입니다.
 
 - CPU, RAM, GPU, 저장장치가 무엇인지
 - 디스크 건강 상태는 어떤지
@@ -108,7 +108,7 @@ PC를 **5개 항목 100점 만점**으로 평가합니다.
 
 ```
   ====================================================
-        PC Spec Checker  v3.0
+        pc-spec_checker-kit  v3.0
         Deep Hardware + Dev Tool Scanner
   ====================================================
 
