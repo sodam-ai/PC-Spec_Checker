@@ -1,4 +1,4 @@
-# pc-spec_checker-kit v3.0
+# pc-spec_checker-kit
 
 **One double-click to see everything about your PC.**
 
@@ -108,7 +108,7 @@ More questions and fixes are in the **[guide's troubleshooting section](./GUIDE.
 
 ```
   ====================================================
-        pc-spec_checker-kit  v3.0
+        pc-spec_checker-kit
         Deep Hardware + Dev Tool Scanner
   ====================================================
 
