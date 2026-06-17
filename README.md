@@ -1,4 +1,4 @@
-# pc-spec_checker-kit v3.0
+# pc-spec_checker-kit
 
 **더블클릭 한 번으로 내 PC의 모든 것을 확인하세요.**
 
@@ -108,7 +108,7 @@ PC를 **5개 항목 100점 만점**으로 평가합니다.
 
 ```
   ====================================================
-        pc-spec_checker-kit  v3.0
+        pc-spec_checker-kit
         Deep Hardware + Dev Tool Scanner
   ====================================================
 

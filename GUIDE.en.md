@@ -1,4 +1,4 @@
-# pc-spec_checker-kit v3.0 — Complete Beginner's Guide (English)
+# pc-spec_checker-kit — Complete Beginner's Guide (English)
 
 > Made so that even people using a computer, smartphone, AI, or messenger app
 > **for the very first time** can do everything by themselves with just this one document.
@@ -31,7 +31,7 @@
 19. [For people who code with AI](#19-for-people-who-code-with-ai)
 20. [Safety / Privacy](#20-safety--privacy)
 21. [License / Copyright / Commercial use](#21-license--copyright--commercial-use)
-22. [Changelog](#22-changelog)
+22. [Key features](#22-key-features)
 23. [How to contribute](#23-how-to-contribute)
 24. [Contact / Support](#24-contact--support)
 
@@ -582,19 +582,14 @@ All this tool does is:
 
 ---
 
-## 22. Changelog
+## 22. Key features
 
-### v3.0 (current)
-- Expanded the menu from 9 to **15** items (+ item 0 to exit)
-- Greatly expanded the dev-tools scan from ~50 to **193 tools** (17 categories)
-- Added: Battery/Power, Security Status, Startup Programs, Audio/USB/Bluetooth, Installed Apps
-- Added: Node version managers, Python ecosystem tools, AI coding tools, Cloud CLIs, Linters/Formatters
-- Score system upgrade: 5 categories (was 3) + letter grades (S/A/B/C/D) + weakness analysis
-- Better handling of tools that emit errors; improved wildcard resolution for version-specific install paths
-
-### v2.2
-- Deep detection engine (PATH + known paths + registry)
-- 50+ dev tools, score system (100 points, 3 categories)
+- **15 menus** + exit (0) — pick only what you want
+- Deep scan of **193 dev tools** (17 categories) via 3-step detection (PATH + known paths + registry)
+- Hardware: CPU, RAM (per stick), disk (health), GPU, battery/power, audio/USB/Bluetooth
+- System: security status, startup programs, installed apps, WSL
+- Score system: 5 categories out of 100 + letter grades (S/A/B/C/D) + weakness analysis & recommendations
+- Menu and section titles shown in **English / Korean**
 
 ---
 
@@ -616,4 +611,4 @@ If you find a tool that isn't detected, or know a common install path that's mis
 ---
 
 *This document (GUIDE.en.md) and its PDF version (GUIDE.en.pdf) have identical content.*
-*Reference version: pc-spec_checker-kit v3.0 · License: Apache License 2.0 · © 2026 SoDam AI Studio*
+*Reference: pc-spec_checker-kit · License: Apache License 2.0 · © 2026 SoDam AI Studio*

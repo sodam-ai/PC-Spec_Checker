@@ -13,7 +13,7 @@ goto :eof
 $ErrorActionPreference = 'Continue'
 
 # ================================================================
-#  pc-spec_checker-kit v3.0
+#  pc-spec_checker-kit
 #  Single-file deep hardware + dev tool scanner
 # ================================================================
 
@@ -267,7 +267,7 @@ function Show-Header {
     Clear-Host
     Write-Host ""
     Write-Host "  ====================================================" -ForegroundColor Cyan
-    Write-Host "        pc-spec_checker-kit  v3.0" -ForegroundColor Yellow
+    Write-Host "        pc-spec_checker-kit" -ForegroundColor Yellow
     Write-Host "        Deep Hardware + Dev Tool Scanner" -ForegroundColor DarkGray
     Write-Host "        내 PC 사양 + 개발 도구 검사기 (English / 한국어)" -ForegroundColor DarkGray
     Write-Host "  ====================================================" -ForegroundColor Cyan
