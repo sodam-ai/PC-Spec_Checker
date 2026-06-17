@@ -1,619 +1,619 @@
-# PC Spec Checker v3.0 — Complete Beginner's Guide (English)
+# PC Spec Checker v3.0 — 완전 초보자 가이드 (한국어)
 
-> Made so that even people using a computer, smartphone, AI, or messenger app
-> **for the very first time** can do everything by themselves with just this one document.
-> If you see a word you don't know, check **[18. Glossary](#18-glossary-plain-language)** at the bottom.
+> 컴퓨터, 스마트폰, AI, 메신저 같은 전자기기를 **처음 다루는 분**도
+> 이 문서 하나만 따라 하면 끝까지 혼자 할 수 있도록 만들었습니다.
+> 모르는 단어가 나오면 맨 아래 **[18. 용어 설명](#18-용어-설명-처음-보는-단어-쉽게)** 을 보세요.
 
-> 🌐 한국어 버전: [GUIDE.ko.md](./GUIDE.ko.md)
-
----
-
-## Table of Contents
-
-1. [What is this? (one-line summary)](#1-what-is-this-one-line-summary)
-2. [Explained simply](#2-explained-simply)
-3. [Who is this for?](#3-who-is-this-for)
-4. [Prerequisites / Required programs](#4-prerequisites--required-programs)
-5. [How to download](#5-how-to-download)
-6. [How to install](#6-how-to-install-nothing-to-install)
-7. [Quick start (3 steps)](#7-quick-start-3-steps)
-8. [How to run (in detail)](#8-how-to-run-in-detail)
-9. [How to use — every menu item 0–15](#9-how-to-use--every-menu-item-015)
-10. [How it works (under the hood)](#10-how-it-works-under-the-hood)
-11. [How to read the results](#11-how-to-read-the-results)
-12. [The score system in detail](#12-the-score-system-in-detail)
-13. [Workflow (full flow diagram)](#13-workflow-full-flow-diagram)
-14. [Commands](#14-commands)
-15. [File locations / Document locations](#15-file-locations--document-locations)
-16. [Troubleshooting / Error handling](#16-troubleshooting--error-handling)
-17. [Frequently Asked Questions (FAQ)](#17-frequently-asked-questions-faq)
-18. [Glossary (plain language)](#18-glossary-plain-language)
-19. [For people who code with AI](#19-for-people-who-code-with-ai)
-20. [Safety / Privacy](#20-safety--privacy)
-21. [License / Copyright / Commercial use](#21-license--copyright--commercial-use)
-22. [Changelog](#22-changelog)
-23. [How to contribute](#23-how-to-contribute)
-24. [Contact / Support](#24-contact--support)
+> 🌐 English version: [GUIDE.en.md](./GUIDE.en.md)
 
 ---
 
-## 1. What is this? (one-line summary)
+## 목차
 
-**Double-click one file and it instantly shows you everything about your PC's specs — for free.**
-
-- No installation · No sign-up · Works without internet · Never sends your data anywhere
-- It only **reads** your PC. It does not change or delete anything.
+1. [이게 뭔가요? (한 줄 요약)](#1-이게-뭔가요-한-줄-요약)
+2. [쉽게 풀어서 설명](#2-쉽게-풀어서-설명)
+3. [누구를 위한 도구인가요?](#3-누구를-위한-도구인가요)
+4. [사전 준비물 / 필요 프로그램](#4-사전-준비물--필요-프로그램)
+5. [다운로드 방법](#5-다운로드-방법)
+6. [설치 방법](#6-설치-방법-설치할-게-없습니다)
+7. [빠른 시작 (3단계)](#7-빠른-시작-3단계)
+8. [실행 방법 (자세히)](#8-실행-방법-자세히)
+9. [사용 방법 — 메뉴 0~15 전부 설명](#9-사용-방법--메뉴-015-전부-설명)
+10. [작동 방법 (원리) — 안에서 무슨 일이 일어나나요?](#10-작동-방법-원리--안에서-무슨-일이-일어나나요)
+11. [결과 읽는 법](#11-결과-읽는-법)
+12. [점수 시스템 상세](#12-점수-시스템-상세)
+13. [워크플로우 (전체 흐름도)](#13-워크플로우-전체-흐름도)
+14. [명령어](#14-명령어)
+15. [파일 위치 / 문서 위치](#15-파일-위치--문서-위치)
+16. [문제 대처 / 오류 대처](#16-문제-대처--오류-대처)
+17. [자주 묻는 질문 (FAQ)](#17-자주-묻는-질문-faq)
+18. [용어 설명 (처음 보는 단어 쉽게)](#18-용어-설명-처음-보는-단어-쉽게)
+19. [AI로 코딩하는 분들을 위한 안내](#19-ai로-코딩하는-분들을-위한-안내)
+20. [안전 / 개인정보](#20-안전--개인정보)
+21. [라이선스 / 저작권 / 상업적 이용](#21-라이선스--저작권--상업적-이용)
+22. [변경 이력](#22-변경-이력)
+23. [기여 방법](#23-기여-방법)
+24. [연락 / 지원](#24-연락--지원)
 
 ---
 
-## 2. Explained simply
+## 1. 이게 뭔가요? (한 줄 요약)
 
-Think of a **medical checkup** at a hospital.
-This tool is a **free health checkup for your computer**.
+**파일 하나를 두 번 클릭하면, 내 컴퓨터(PC)의 모든 사양을 한눈에 보여주는 무료 도구입니다.**
 
-When you double-click it, the computer inspects its own parts and tells you:
-
-- 🧠 What **CPU** (the brain) you have and how fast it is
-- 💾 How much **RAM** (work space) you have
-- 🗄️ What **storage** (SSD/HDD) you have, how full it is, and whether it's healthy
-- 🎮 What **graphics card (GPU)** you have
-- 🔋 **Battery** health (if it's a laptop)
-- 🛡️ Security status such as **antivirus and firewall**
-- 🧰 The **programs and developer tools** installed (auto-checks up to 193 tools)
-- 🏆 Finally, a **score out of 100** rating how ready your PC is for development (coding)
-
-> 💡 You don't need to care about "development" or "coding."
-> It's also very useful just for checking **basic specs** like CPU, RAM, storage, and GPU.
+- 설치 안 함 · 회원가입 안 함 · 인터넷 없어도 됨 · 내 정보를 밖으로 보내지 않음
+- 내 PC를 **읽기만** 합니다. 아무것도 바꾸거나 지우지 않습니다.
 
 ---
 
-## 3. Who is this for?
+## 2. 쉽게 풀어서 설명
 
-| If you are... | You can use it to... |
+병원에서 받는 **건강검진**을 떠올려 보세요.
+이 도구는 내 컴퓨터를 위한 **무료 건강검진**입니다.
+
+두 번 클릭하면 컴퓨터가 스스로 자기 몸(부품)을 살펴보고, 다음을 알려 줍니다.
+
+- 🧠 **CPU**(두뇌)가 무엇이고 얼마나 빠른지
+- 💾 **RAM**(작업 공간)이 얼마나 있는지
+- 🗄️ **저장장치**(SSD/HDD)가 무엇이고 얼마나 비었는지, 건강한지
+- 🎮 **그래픽카드(GPU)** 가 무엇인지
+- 🔋 노트북이라면 **배터리** 상태
+- 🛡️ **백신·방화벽** 같은 보안 상태
+- 🧰 컴퓨터에 깔린 **프로그램과 개발 도구**(최대 193개까지 자동 점검)
+- 🏆 마지막으로 내 PC가 개발(코딩)에 얼마나 적합한지 **100점 만점 점수**
+
+> 💡 "개발", "코딩"에 관심이 없어도 괜찮습니다.
+> CPU·RAM·저장장치·그래픽카드 같은 **기본 사양 확인용**으로도 아주 유용합니다.
+
+---
+
+## 3. 누구를 위한 도구인가요?
+
+| 이런 분께 | 이렇게 쓸 수 있어요 |
 |---|---|
-| **Anyone curious about their PC specs** | Check instantly without installing heavy software |
-| **Someone buying/selling a used PC** | Summarize the specs on one page |
-| **Someone not familiar with computers** | Just say "double-click this file" — done |
-| **A coding beginner** | See if your PC is ready and what to install next |
-| **People coding with AI** (ChatGPT, Claude, Cursor, etc.) | Verify your dev environment is set up |
-| **IT support staff** | Tell a remote person "run this file and tell me what you see" |
+| **내 PC 사양이 궁금한 누구나** | 무거운 프로그램 설치 없이 바로 확인 |
+| **중고 PC를 사거나 파는 분** | 사양을 한 장으로 정리해서 보여 주기 |
+| **컴퓨터를 잘 모르는 분** | "이 파일 두 번 누르세요"만 하면 끝 |
+| **코딩을 처음 배우는 분** | 내 PC가 개발에 적합한지, 뭘 더 깔아야 하는지 확인 |
+| **AI로 코딩하는 분** (ChatGPT·Claude·Cursor 등) | 개발 환경이 제대로 깔렸는지 점검 |
+| **IT 지원 담당자** | 멀리 있는 사람에게 "이 파일 실행하고 결과 알려 주세요" |
 
 ---
 
-## 4. Prerequisites / Required programs
+## 4. 사전 준비물 / 필요 프로그램
 
-**You need to prepare almost nothing.** Just confirm the following.
+**거의 아무것도 준비할 필요가 없습니다.** 아래만 확인하면 됩니다.
 
-| Item | Required? | Notes |
+| 항목 | 필요 여부 | 설명 |
 |---|---|---|
-| **Windows 10 or 11** | ✅ Required | This tool is **Windows only**. |
-| **PowerShell** | ✅ Required but **already installed** | Built into Windows. No separate install needed. |
-| Internet connection | 🔵 Optional | Works without it. With it, you also see an "internet response time" item. |
-| Administrator rights | 🔵 Optional | Works without them. Only a few items (like CPU temperature) show `N/A`. |
-| Installing extra programs | ❌ Not needed | You do **not** need to install antivirus, drivers, runtimes, etc. |
+| **Windows 10 또는 11** | ✅ 필수 | 이 도구는 **Windows 전용**입니다. |
+| **PowerShell** | ✅ 필수지만 **이미 깔려 있음** | Windows에 기본 내장. 따로 설치할 필요 없습니다. |
+| 인터넷 연결 | 🔵 선택 | 없어도 작동합니다. 있으면 "인터넷 속도(응답시간)" 항목이 추가로 표시됩니다. |
+| 관리자 권한 | 🔵 선택 | 없어도 작동합니다. 일부 항목(CPU 온도 등)만 `N/A`로 표시됩니다. |
+| 추가 프로그램 설치 | ❌ 불필요 | 백신·드라이버·런타임 등 **아무것도 설치하지 않아도 됩니다.** |
 
-> ❗ **It does NOT work on Mac or Linux.** Use it only on a Windows computer.
-> Check your Windows version: press `Windows key + R` → type `winver` → Enter.
-
----
-
-## 5. How to download
-
-This tool is just **one** file: **`PC-Spec_Checker.bat`**.
-There are two ways to get it.
-
-### Method A — Get everything from GitHub (recommended)
-
-1. In a web browser (Chrome, Edge, etc.), open the project's GitHub page:
-   `https://github.com/sodam-ai/PC-Spec_Checker`
-2. Click the green **`< > Code`** button.
-3. In the menu, click **`Download ZIP`** at the bottom.
-4. A zip file like `PC-Spec_Checker-main.zip` is usually saved to your **`Downloads`** folder.
-
-### Method B — Get just the one file
-
-If you only received `PC-Spec_Checker.bat`, that single file works completely on its own.
-(No other files are required.)
-
-> 💡 Can't find the downloaded file? → See [15. File locations](#15-file-locations--document-locations).
+> ❗ **Mac(맥북)·Linux(리눅스)에서는 작동하지 않습니다.** Windows 컴퓨터에서만 사용하세요.
+> Windows 버전 확인: 키보드에서 `윈도우키 + R` → `winver` 입력 → Enter.
 
 ---
 
-## 6. How to install (nothing to install)
+## 5. 다운로드 방법
 
-**This tool has no "installation" step.** Just extract it and use it.
+이 도구는 **`PC-Spec_Checker.bat`** 라는 파일 **하나**가 전부입니다.
+받는 방법은 두 가지입니다.
 
-1. Find the downloaded ZIP file. (Usually in the `Downloads` folder.)
-2. **Right-click** the ZIP file → **`Extract All`** (or `압축 풀기`).
-3. Inside the extracted folder you'll find **`PC-Spec_Checker.bat`**.
+### 방법 A — GitHub에서 전체 받기 (권장)
 
-> ✅ **Recommended location**: put it somewhere you can easily find, like your `Desktop` or `Documents`.
-> ⚠️ **Avoid**: running it directly from inside the ZIP without extracting — it can behave unreliably.
-> Always **extract first**, then run.
+1. 인터넷 브라우저(Chrome, Edge 등)에서 이 프로젝트의 GitHub 페이지를 엽니다.
+   주소: `https://github.com/sodam-ai/PC-Spec_Checker`
+2. 초록색 **`< > Code`** 버튼을 클릭합니다.
+3. 메뉴에서 맨 아래 **`Download ZIP`** 를 클릭합니다.
+4. 보통 컴퓨터의 **`다운로드`(Downloads)** 폴더에 `PC-Spec_Checker-main.zip` 같은 압축 파일이 저장됩니다.
 
----
+### 방법 B — 파일 하나만 받기
 
-## 7. Quick start (3 steps)
+`PC-Spec_Checker.bat` 파일만 따로 받았다면, 그 파일 하나로도 완전히 작동합니다.
+(다른 파일이 없어도 됩니다.)
 
-The fastest way to see results.
-
-1. **Double-click** the **`PC-Spec_Checker.bat`** file.
-2. (If a security warning appears) click **`More info`** → **`Run anyway`**. → details in [section 8](#8-how-to-run-in-detail)
-3. When the menu appears in the black window, press **`1`** and **Enter** → all specs appear at once.
-
-> That's it! After viewing, press **Enter** to return to the menu, and press **`0`** to quit.
+> 💡 다운로드한 파일이 어디 갔는지 모르겠다면 → [15. 파일 위치](#15-파일-위치--문서-위치) 참고.
 
 ---
 
-## 8. How to run (in detail)
+## 6. 설치 방법 (설치할 게 없습니다)
 
-### 8-1. Basic run (double-click)
+**이 도구는 "설치"라는 과정이 없습니다.** 압축만 풀면 바로 사용합니다.
 
-**Double-click** the `PC-Spec_Checker.bat` file with your mouse.
-A black command window opens and shows the menu.
+1. 다운로드한 ZIP 파일을 찾습니다. (보통 `다운로드` 폴더)
+2. ZIP 파일에 **마우스 오른쪽 버튼** 클릭 → **`압축 풀기`** (또는 `Extract All`)를 누릅니다.
+3. 압축이 풀린 폴더 안에 **`PC-Spec_Checker.bat`** 파일이 있습니다.
 
-### 8-2. When Windows shows a security warning (this is normal)
-
-The first time you run a `.bat` file downloaded from the internet, Windows may show a warning for safety.
-
-- If a blue window saying **"Windows protected your PC"** appears:
-  1. Click **`More info`**.
-  2. Click the **`Run anyway`** button that appears below.
-
-> 🔒 **Why is it safe?** This file is **100% open source**.
-> Open `PC-Spec_Checker.bat` with **Notepad** and you can read every line of code yourself.
-> The tool only **reads** your PC info — it does not install, change, or send anything. ([20. Safety](#20-safety--privacy))
-
-### 8-3. Other ways to run
-
-- You can also **right-click → `Open`** to run it.
-- **Run as administrator**: right-click the file → **`Run as administrator`**.
-  → This may reveal a few extra items (like CPU temperature) instead of `N/A`. (Not required.)
-
-### 8-4. If you want to save the results to a file (optional)
-
-This tool does not create files by itself. To save the results:
-
-- **Option 1 (easiest)**: In the black window, drag-select the text and copy it (`Ctrl+C` or right-click), then paste (`Ctrl+V`) into Notepad.
-- **Option 2 (run by command)**: see "Save results to a text file" in [14. Commands](#14-commands).
+> ✅ **권장 위치**: `바탕화면` 또는 `문서` 폴더처럼 **본인이 쉽게 찾는 곳**에 두세요.
+> ⚠️ **피해야 할 위치**: `다운로드` 폴더 안에서 ZIP을 풀지 않은 채 실행하면 동작이 불안정할 수 있습니다.
+> 꼭 **압축을 먼저 푼 뒤** 실행하세요.
 
 ---
 
-## 9. How to use — every menu item 0–15
+## 7. 빠른 시작 (3단계)
 
-When you run the tool, the menu below appears.
-**Type the number of the item you want and press Enter.**
+가장 빠르게 결과를 보는 방법입니다.
 
-> If it's your first time, just choose **`1` (Full Scan)**.
+1. **`PC-Spec_Checker.bat`** 파일을 **두 번 클릭**합니다.
+2. (보안 경고가 뜨면) **`추가 정보`** → **`실행`** 을 클릭합니다. → 자세한 건 [8번](#8-실행-방법-자세히)
+3. 검은 창에 메뉴가 뜨면 **`1`** 을 누르고 **Enter** → 전체 사양이 한 번에 나옵니다.
 
-| No. | Menu name | What it shows |
+> 끝입니다! 결과를 다 본 뒤에는 **Enter** 를 눌러 메뉴로 돌아가고, **`0`** 을 누르면 종료됩니다.
+
+---
+
+## 8. 실행 방법 (자세히)
+
+### 8-1. 기본 실행 (더블클릭)
+
+`PC-Spec_Checker.bat` 파일을 **마우스로 두 번 빠르게 클릭**합니다.
+검은색 명령 창이 열리고 메뉴가 나타납니다.
+
+### 8-2. Windows 보안 경고가 뜰 때 (정상입니다)
+
+인터넷에서 받은 `.bat` 파일을 처음 실행하면 Windows가 안전을 위해 경고를 보여 줄 수 있습니다.
+
+- **"Windows의 PC 보호" / "Windows protected your PC"** 라는 파란 창이 뜨면:
+  1. **`추가 정보`(More info)** 를 클릭합니다.
+  2. 아래에 생기는 **`실행`(Run anyway)** 버튼을 클릭합니다.
+
+> 🔒 **왜 안전한가요?** 이 파일은 **100% 공개 소스**입니다.
+> `PC-Spec_Checker.bat` 파일을 **메모장**으로 열면 모든 코드를 직접 눈으로 확인할 수 있습니다.
+> 이 도구는 내 PC 정보를 **읽기만** 하고, 설치·변경·전송을 하지 않습니다. ([20. 안전](#20-안전--개인정보))
+
+### 8-3. 다른 실행 방법
+
+- **마우스 오른쪽 클릭 → `열기`** 로도 실행할 수 있습니다.
+- **관리자 권한으로 실행**: 파일에 오른쪽 클릭 → **`관리자 권한으로 실행`**.
+  → 이렇게 하면 CPU 온도 등 일부 추가 정보가 `N/A` 대신 표시될 수 있습니다. (필수는 아님)
+
+### 8-4. 결과를 파일로 저장하고 싶을 때 (선택)
+
+이 도구는 스스로 파일을 만들지 않습니다. 결과를 저장하려면:
+
+- **방법 1 (가장 쉬움)**: 검은 창에서 결과 글자를 마우스로 드래그해 복사(`Ctrl+C` 또는 오른쪽 클릭) → 메모장에 붙여넣기(`Ctrl+V`).
+- **방법 2 (직접 명령으로 실행)**: [14. 명령어](#14-명령어)의 "결과를 텍스트 파일로 저장" 참고.
+
+---
+
+## 9. 사용 방법 — 메뉴 0~15 전부 설명
+
+도구를 실행하면 아래와 같은 메뉴가 나옵니다.
+**보고 싶은 항목의 숫자를 입력하고 Enter** 를 누르면 됩니다.
+
+> 처음이라면 그냥 **`1`(전체 스캔)** 을 추천합니다.
+
+| 번호 | 메뉴 이름 | 무엇을 보여 주나요 |
 |---|---|---|
-| **1** | **Show ALL (Full Scan)** ⭐recommended | Scans items 2–15 below **all at once** |
-| 2 | Basic Info + Motherboard + BIOS | PC name, user, Windows edition/version/build, install date, uptime, Windows activation, latest update, motherboard maker/model, BIOS info |
-| 3 | CPU (detailed) | Processor name/maker, core/thread count, clock speed, cache, 32/64-bit·ARM, virtualization support, **CPU temperature** (with admin), live usage bar |
-| 4 | RAM (each stick) | Total/used/free memory, **per stick (slot)**: capacity, type (DDR4/DDR5, etc.), speed, maker, part number, slots used |
-| 5 | Disk (type + health) | Storage model/capacity, **SSD/HDD/NVMe type**, **health status** (Healthy/Warning/Unhealthy), disk temperature, per-drive (C:, D:) total/used/free bar |
-| 6 | GPU (detailed) | Graphics card name/status, dedicated memory (VRAM), current resolution/refresh rate (Hz)/color depth, driver version/date, GPU temperature (if sensor present) |
-| 7 | Network + Display | Network adapter info, **IP address**, MAC address, gateway, DNS, **internet response time** (one ping to 8.8.8.8), connected **monitor** name/maker |
-| 8 | Battery / Power | (Laptop) battery name/status, **charge %**, time left, **current vs design capacity (battery health %)**, charge state / (Desktop) "No battery" + power plan name |
-| 9 | Security Status | **Antivirus** name/active, **firewall** (Domain/Private/Public) on/off, **UAC** on/off, C: drive **BitLocker (encryption)** status |
-| 10 | Startup Programs | Programs that **launch automatically when you turn on the PC** (registry, Startup folder, scheduled tasks), total count (too many can slow boot) |
-| 11 | Audio / USB / Bluetooth | Sound devices, USB controllers, **connected USB devices**, Bluetooth devices |
-| 12 | Installed Apps | Installed programs organized into **8 categories** (browsers, office, communication, media, graphics, cloud, security, utilities) + versions |
-| 13 | **Dev Tools (deep scan)** 🟡 | Checks **193 tools** in **17 categories** (Python, Node.js, Git, Docker, VS Code, AI coding tools, etc.). Shows versions if installed |
-| 14 | WSL (Linux on Windows) | Whether WSL is installed, version, installed Linux distros, and whether key tools (python, node, etc.) exist inside Linux |
-| 15 | **Score + Recommendations** 🏆 | Rates your PC **out of 100** (grades S/A/B/C/D) + **weaknesses and recommendations** |
-| **0** | **Exit** | Closes the tool |
+| **1** | **전체 스캔 (Show ALL)** ⭐추천 | 아래 2~15번 항목을 **한 번에 전부** 스캔 |
+| 2 | 기본 정보 + 메인보드 + BIOS | PC 이름, 사용자, Windows 종류·버전·빌드, 설치일, 켜둔 시간(업타임), Windows 정품 여부, 최근 업데이트, 메인보드 제조사·모델, BIOS 정보 |
+| 3 | CPU (자세히) | 프로세서 이름·제조사, 코어/스레드 수, 클럭 속도, 캐시, 32/64비트·ARM 여부, 가상화 지원, **CPU 온도**(관리자 권한 시), 현재 사용률 막대그래프 |
+| 4 | RAM (램 한 개씩) | 전체/사용/남은 메모리, **램 한 개(슬롯)마다** 용량·종류(DDR4/DDR5 등)·속도·제조사·부품번호, 슬롯 사용 개수 |
+| 5 | 디스크 (종류 + 건강) | 저장장치 모델·용량, **SSD/HDD/NVMe 구분**, **건강 상태**(정상/주의/위험), 디스크 온도, 드라이브별(C:, D: 등) 전체·사용·남은 용량 막대그래프 |
+| 6 | GPU (그래픽, 자세히) | 그래픽카드 이름·상태, 전용 메모리(VRAM), 현재 해상도·주사율(Hz)·색 심도, 드라이버 버전·날짜, GPU 온도(센서 있을 때) |
+| 7 | 네트워크 + 디스플레이 | 랜카드 정보, **IP 주소**, MAC 주소, 게이트웨이, DNS, **인터넷 응답속도**(8.8.8.8에 1회 핑), 연결된 **모니터** 이름·제조사 |
+| 8 | 배터리 / 전원 | (노트북) 배터리 이름·상태, **충전 %**, 남은 사용시간, 설계 용량 대비 **현재 용량(배터리 건강 %)**, 충전 상태 / (데스크탑) "배터리 없음" + 전원 계획 이름 |
+| 9 | 보안 상태 | **백신(안티바이러스)** 이름·작동 여부, **방화벽**(도메인/개인/공용) 켜짐 여부, **UAC**(사용자 계정 컨트롤) 켜짐 여부, C: 드라이브 **BitLocker(암호화)** 상태 |
+| 10 | 시작 프로그램 | 컴퓨터를 **켤 때 자동으로 실행**되는 프로그램 목록(레지스트리·시작 폴더·예약 작업), 총 개수(많으면 부팅이 느려질 수 있음) |
+| 11 | 오디오 / USB / 블루투스 | 사운드 장치, USB 컨트롤러, **연결된 USB 기기 목록**, 블루투스 기기 |
+| 12 | 설치된 앱 | 컴퓨터에 깔린 프로그램을 **8개 분류**로 정리(브라우저·오피스·메신저·미디어·그래픽·클라우드·보안·유틸리티) + 버전 |
+| 13 | **개발 도구 (정밀 스캔)** 🟡 | **193개**의 개발 도구를 **17개 분류**로 점검(Python, Node.js, Git, Docker, VS Code, AI 코딩 도구 등). 깔려 있으면 버전까지 표시 |
+| 14 | WSL (윈도우 속 리눅스) | WSL 설치 여부, 버전, 깔린 리눅스 배포판 목록, 리눅스 안의 주요 도구(파이썬·노드 등) 설치 여부 |
+| 15 | **점수 + 추천** 🏆 | 내 PC를 **100점 만점**으로 채점(S/A/B/C/D 등급) + **부족한 점과 개선 추천** |
+| **0** | **종료** | 도구를 닫습니다 |
 
-### Usage flow
+### 사용 흐름
 
-1. Type a number (e.g. `1`) → **Enter**
-2. Results appear (a full scan can take 30–60 seconds)
-3. When done, press **Enter** → back to the menu
-4. Pick another item, or press **`0`** to quit
+1. 숫자(예: `1`)를 입력 → **Enter**
+2. 결과가 화면에 나옴 (전체 스캔은 30~60초 걸릴 수 있음)
+3. 다 봤으면 **Enter** → 다시 메뉴로 돌아감
+4. 다른 항목을 또 보거나, **`0`** 을 눌러 종료
 
-> 💡 One run lets you keep picking items. You don't need to double-click again each time.
-
----
-
-## 10. How it works (under the hood)
-
-A simple explanation of how it **safely reads info only**.
-
-1. **It only reads.** Using features already built into Windows (below), it simply **asks the computer "what are your specs?" and prints the answers** to the screen.
-   - **WMI / CIM**: Windows' official store of its own hardware info. CPU, RAM, disk, etc. are queried from here.
-   - **Registry (read-only)**: It **only reads** the list of installed programs, startup items, etc. It never edits them.
-2. **It finds dev tools in 3 steps.** (So it can detect tools even if they're not on your PATH.)
-   1. **PATH search** — finds the tool in registered paths and asks for its version
-   2. **Known install paths** — checks dozens of folders where each tool is commonly installed (version-specific folders are found with wildcards)
-   3. **Registry** — for programs with a window (GUI), it checks the installed list
-3. **It touches the internet only once.** When you run item 7 (Network) or item 1 (Full Scan), it sends **one ping to Google's public address `8.8.8.8`** to check if the internet works. It **only checks for a response — it does not send your data**. With no internet, this item is simply skipped.
-4. **It does not create files.** No temp files, logs, or reports are saved. All results show only in the window.
-5. **It does not change settings.** No installing, deleting, or changing settings at all.
-
-> Summary: **No install · No changes · No saving · No external transfer. Only read and show.**
+> 💡 한 번 실행으로 여러 항목을 계속 골라 볼 수 있습니다. 매번 다시 더블클릭할 필요 없습니다.
 
 ---
 
-## 11. How to read the results
+## 10. 작동 방법 (원리) — 안에서 무슨 일이 일어나나요?
 
-The meaning of the symbols and colors on screen.
+이 도구가 **안전하게 정보만 읽는 방식**을 쉽게 설명합니다.
 
-| Symbol | Meaning |
+1. **읽기만 합니다.** Windows에 이미 들어 있는 기능(아래)을 이용해 컴퓨터에게 "너 사양이 뭐야?"라고 **물어보고 답을 화면에 출력**할 뿐입니다.
+   - **WMI / CIM**: Windows가 자기 하드웨어 정보를 보관하는 공식 창고. 여기서 CPU·RAM·디스크 등을 조회합니다.
+   - **레지스트리(읽기 전용)**: 설치된 프로그램 목록·시작 프로그램 등을 **읽기만** 합니다. 절대 고치지 않습니다.
+2. **개발 도구는 3단계로 찾습니다.** (그래서 PATH에 등록 안 한 도구도 잘 찾아냅니다)
+   1. **PATH 검색** — 시스템에 등록된 경로에서 도구를 찾고 버전을 물어봄
+   2. **알려진 설치 경로** — 도구마다 자주 깔리는 폴더 수십 곳을 직접 확인(버전별 폴더는 와일드카드로 탐색)
+   3. **레지스트리** — 화면이 있는(GUI) 프로그램은 설치 목록에서 확인
+3. **인터넷은 딱 한 번만** 씁니다. "7번(네트워크)" 또는 "1번(전체)"을 실행할 때, 인터넷이 되는지 확인하려고 구글의 공개 주소 **`8.8.8.8` 에 핑(ping)을 1회** 보냅니다. **내 정보를 보내는 게 아니라 "응답 오나?"만 확인**합니다. 인터넷이 없으면 이 항목만 건너뜁니다.
+4. **파일을 만들지 않습니다.** 임시 파일·로그·보고서 등 **어떤 파일도 저장하지 않습니다.** 모든 결과는 화면(검은 창)에만 표시됩니다.
+5. **설정을 바꾸지 않습니다.** 설치·삭제·설정 변경이 전혀 없습니다.
+
+> 정리: **설치 없음 · 변경 없음 · 저장 없음 · 외부 전송 없음. 오직 읽고 보여 주기만.**
+
+---
+
+## 11. 결과 읽는 법
+
+화면에 나오는 기호와 색의 의미입니다.
+
+| 표시 | 뜻 |
 |---|---|
-| `[O]` (green) | That tool/feature is **present / on / OK** |
-| `[X]` (gray) | That tool is **not installed** |
-| A number like `2.1.80` | The tool's **version** |
-| `(found in PATH)` or `(found)` | The tool **exists, but its version couldn't be read**. It works fine. |
-| `N/A` | Can't check right now. CPU temperature, etc. may need **administrator rights**. |
-| `N/A (admin required)` | You may see it if you run as administrator. |
-| Bar graph `[#######-----]` | Visual usage (%). Green = plenty, yellow = moderate, red = high |
+| `[O]` (초록색) | 그 도구·기능이 **있음 / 켜짐 / 정상** |
+| `[X]` (회색) | 그 도구가 **설치 안 됨 (not installed)** |
+| `2.1.80` 같은 숫자 | 그 도구의 **버전** |
+| `(found in PATH)` 또는 `(found)` | 도구는 **있는데 버전만 못 읽었다**는 뜻. 정상 작동합니다. |
+| `N/A` | 지금은 확인 불가. CPU 온도 등은 **관리자 권한**이 필요할 수 있습니다. |
+| `N/A (admin required)` | 관리자 권한으로 실행하면 볼 수 있습니다. |
+| 막대그래프 `[#######-----]` | 사용량(%)을 시각적으로 표시. 초록=여유, 노랑=보통, 빨강=높음 |
 
-**Color meaning (approximate)**
+**색의 의미 (대략)**
 
-- 🟢 **Green**: good / normal / plenty
-- 🟡 **Yellow**: caution / moderate / worth checking
-- 🔴 **Red**: risk / low / high temperature
-- ⚪ **Gray**: not applicable / not installed / disabled
-
----
-
-## 12. The score system in detail
-
-**Menu 15** (or the end of the full scan in menu 1) rates your PC **out of 100**.
-The basis is "how suitable is it for development (coding)."
-
-### Points per category (100 total)
-
-| Category | Max | Scoring rule |
-|---|---|---|
-| **CPU** | 20 | 8+ cores = 20 / 6 cores = 16 / 4 cores = 12 / 2 cores = 6 / fewer = 3 |
-| **RAM** | 20 | 64GB+ = 20 / 32GB = 18 / 16GB = 14 / 8GB = 8 / less = 3 |
-| **Storage** | 15 | NVMe = 15 / regular SSD = 12 / HDD = 5 · (−3 if free space on C: is under 30GB) |
-| **GPU** | 10 | Dedicated 8GB+ = 10 / 4GB = 8 / 2GB = 5 / integrated = 3 / none = 0 |
-| **Dev Tools** | 35 | See table below |
-
-### Dev Tools 35-point breakdown
-
-| Group | Scoring | Max |
-|---|---|---|
-| Core (Python, Node.js, Git) | 5 each | 15 |
-| Package managers (npm, pnpm, pip) | 2 each | 6 |
-| Editors (VS Code, Cursor, IntelliJ, Neovim) | 2 each | 4 |
-| AI coding tools (Claude, Gemini, Codex, Aider) | 2 each | 4 |
-| Extra (Docker, GitHub CLI, Bun, Rust, Go, Make, Terraform, kubectl, AWS, ripgrep) | 1 each | 6 |
-
-### Grades
-
-| Score | Grade | Meaning |
-|---|---|---|
-| 85–100 | **S** | Excellent dev machine |
-| 70–84 | **A** | Great setup |
-| 55–69 | **B** | Decent, room to improve |
-| 40–54 | **C** | Needs improvement |
-| 0–39 | **D** | Consider upgrading hardware + tools |
-
-> Below the score, **weaknesses and recommendations** (e.g. "RAM under 16GB", "Python missing") are shown.
-> ❗ A low score does **not** mean a "bad PC." This score is about **development readiness**.
-> A perfectly good PC for web browsing/documents will score low if it has no dev tools.
+- 🟢 **초록**: 좋음 / 정상 / 여유 있음
+- 🟡 **노랑**: 주의 / 보통 / 확인 권장
+- 🔴 **빨강**: 위험 / 부족 / 온도 높음
+- ⚪ **회색**: 해당 없음 / 미설치 / 비활성
 
 ---
 
-## 13. Workflow (full flow diagram)
+## 12. 점수 시스템 상세
+
+**15번 메뉴**(또는 1번 전체 스캔의 마지막)에서 내 PC를 **100점 만점**으로 채점합니다.
+"개발(코딩)에 얼마나 적합한가"를 기준으로 합니다.
+
+### 항목별 배점 (총 100점)
+
+| 항목 | 최대 점수 | 채점 기준 |
+|---|---|---|
+| **CPU** | 20점 | 8코어 이상 = 20 / 6코어 = 16 / 4코어 = 12 / 2코어 = 6 / 그 미만 = 3 |
+| **RAM** | 20점 | 64GB 이상 = 20 / 32GB = 18 / 16GB = 14 / 8GB = 8 / 그 미만 = 3 |
+| **저장장치** | 15점 | NVMe = 15 / 일반 SSD = 12 / HDD = 5 · (C: 여유 공간이 30GB 미만이면 −3점) |
+| **GPU** | 10점 | 전용 그래픽 8GB 이상 = 10 / 4GB = 8 / 2GB = 5 / 내장 그래픽 = 3 / 없음 = 0 |
+| **개발 도구** | 35점 | 아래 표 참고 |
+
+### 개발 도구 35점 세부
+
+| 묶음 | 점수 방식 | 최대 |
+|---|---|---|
+| 핵심 (Python, Node.js, Git) | 각 5점 | 15점 |
+| 패키지 매니저 (npm, pnpm, pip) | 각 2점 | 6점 |
+| 에디터 (VS Code, Cursor, IntelliJ, Neovim) | 각 2점 | 4점 |
+| AI 코딩 도구 (Claude, Gemini, Codex, Aider) | 각 2점 | 4점 |
+| 추가 (Docker, GitHub CLI, Bun, Rust, Go, Make, Terraform, kubectl, AWS, ripgrep) | 각 1점 | 6점 |
+
+### 등급
+
+| 점수 | 등급 | 의미 |
+|---|---|---|
+| 85~100 | **S** | 최고의 개발 머신 |
+| 70~84 | **A** | 훌륭한 셋업 |
+| 55~69 | **B** | 괜찮음, 개선 여지 있음 |
+| 40~54 | **C** | 개선이 필요함 |
+| 0~39 | **D** | 하드웨어/도구 업그레이드 권장 |
+
+> 점수 아래에 **부족한 부분과 추천**(예: "RAM 16GB 미만", "Python 없음")이 함께 표시됩니다.
+> ❗ 점수가 낮다고 "나쁜 PC"라는 뜻은 아닙니다. 이 점수는 **개발 적합도** 기준입니다.
+> 인터넷·문서 작업용으로는 충분히 좋은 PC도 개발 도구가 없으면 점수가 낮게 나옵니다.
+
+---
+
+## 13. 워크플로우 (전체 흐름도)
 
 ```
-[1] Download           Get the ZIP from GitHub  (or just the .bat file)
+[1] 다운로드            GitHub에서 ZIP 받기  (또는 .bat 파일 하나)
         │
         ▼
-[2] Extract            Right-click the ZIP → "Extract All"
+[2] 압축 풀기           ZIP 오른쪽 클릭 → "압축 풀기"
         │
         ▼
-[3] Run                Double-click PC-Spec_Checker.bat
+[3] 실행                PC-Spec_Checker.bat 두 번 클릭
         │
         ▼
-[4] Handle warning     "More info" → "Run anyway"  (first time only)
+[4] 보안 경고 대처      "추가 정보" → "실행"  (처음 한 번만)
         │
         ▼
-[5] Pick a number      First time → 1 (Full Scan) → Enter
+[5] 메뉴에서 번호 선택   처음이면 → 1 (전체 스캔) → Enter
         │
         ▼
-[6] View results       Read specs & score on screen (copy if needed)
+[6] 결과 확인           화면에서 사양·점수 확인 (필요하면 복사)
         │
-        ├─▶ See more items → Enter to return to menu → pick another number
+        ├─▶ 다른 항목 더 보기 → Enter로 메뉴 복귀 → 다른 번호 선택
         │
         ▼
-[7] Exit               Type 0 → "Goodbye!" → window closes
+[7] 종료                0 입력 → "Goodbye!" → 창 닫힘
 ```
 
 ---
 
-## 14. Commands
+## 14. 명령어
 
-> Honestly, **you barely need to remember any commands.**
-> Double-click with the mouse, then just press **numbers**.
+> 솔직하게 말씀드리면, **이 도구는 명령어를 외울 필요가 거의 없습니다.**
+> 마우스로 두 번 클릭하고, **숫자만** 누르면 됩니다.
 
-### The "inputs" used inside the tool (that's all there is)
+### 도구 안에서 쓰는 "입력" (이게 전부입니다)
 
-| Input | Action |
+| 입력 | 동작 |
 |---|---|
-| `1`–`15` + Enter | Run that menu item |
-| `1` + Enter | Full scan (most recommended) |
-| `13` + Enter | Dev-tools deep scan only |
-| `15` + Enter | Score only |
-| Enter (on a result screen) | Back to the menu |
-| `0` + Enter | Exit |
+| `1` ~ `15` + Enter | 해당 메뉴 항목 실행 |
+| `1` + Enter | 전체 스캔 (가장 추천) |
+| `13` + Enter | 개발 도구 정밀 스캔만 |
+| `15` + Enter | 점수만 보기 |
+| Enter (결과 화면에서) | 메뉴로 돌아가기 |
+| `0` + Enter | 종료 |
 
-### (Optional) Run commands for people comfortable with the computer
+### (선택) 컴퓨터에 익숙한 분을 위한 실행 명령
 
-You can also run it directly from PowerShell or Command Prompt (cmd).
-After navigating to the folder containing the file:
+PowerShell 또는 명령 프롬프트(cmd) 창에서 직접 실행할 수도 있습니다.
+파일이 있는 폴더로 이동한 뒤:
 
 ```bat
 PC-Spec_Checker.bat
 ```
 
-Or with the full path:
+또는 전체 경로로:
 
 ```bat
-"C:\path\to\your\folder\PC-Spec_Checker.bat"
+"C:\내가\둔\폴더\PC-Spec_Checker.bat"
 ```
 
-### (Optional) Save results to a text file
+### (선택) 결과를 텍스트 파일로 저장하기
 
-In Command Prompt (cmd), this saves the results to a file.
-(Auto-enters `1` for a full scan and saves to `result.txt`.)
+명령 프롬프트(cmd)에서 아래처럼 하면 결과를 파일로 남길 수 있습니다.
+(`1`을 자동 입력해 전체 스캔 후 `결과.txt`로 저장)
 
 ```bat
-echo 1 | PC-Spec_Checker.bat > result.txt
+echo 1 | PC-Spec_Checker.bat > 결과.txt
 ```
 
-> Note: this saves text only, without colors or bar graphs. The simplest way to save is the
-> "copy from the screen and paste into Notepad" method in [8-4](#8-4-if-you-want-to-save-the-results-to-a-file-optional).
+> 참고: 이 방법은 색·막대그래프 없이 글자만 저장됩니다. 가장 간단한 저장법은
+> [8-4](#8-4-결과를-파일로-저장하고-싶을-때-선택)의 "화면에서 복사해서 메모장에 붙여넣기"입니다.
 
 ---
 
-## 15. File locations / Document locations
+## 15. 파일 위치 / 문서 위치
 
-### Files in this project
+### 이 프로젝트의 파일 구성
 
 ```
 PC-Spec_Checker/
-├── PC-Spec_Checker.bat   ← the actual tool (double-click this)
-├── LICENSE               ← full license text (Apache 2.0)
-├── NOTICE                ← copyright notice
-├── README.md             ← English intro (GitHub front page)
-├── README.ko.md          ← Korean intro
-├── GUIDE.md              ← English complete guide (this document)
-├── GUIDE.ko.md           ← Korean complete guide
-├── README.pdf / README.ko.pdf   ← PDF versions of the intro
-└── GUIDE.pdf  / GUIDE.ko.pdf     ← PDF versions of the complete guide
+├── PC-Spec_Checker.bat   ← 실제 도구 (이걸 두 번 클릭)
+├── LICENSE               ← 라이선스 전문 (Apache 2.0)
+├── NOTICE                ← 저작권 고지
+├── README.md             ← 한국어 소개 (GitHub 첫 화면)
+├── README.en.md          ← 영어 소개
+├── GUIDE.md              ← 한국어 완전 가이드 (지금 이 문서)
+├── GUIDE.en.md           ← 영어 완전 가이드
+├── README.pdf / README.en.pdf   ← 소개의 PDF판
+└── GUIDE.pdf  / GUIDE.en.pdf     ← 완전 가이드의 PDF판
 ```
 
-> 📄 **The .md and .pdf have identical content.** Use `.md` for reading on screen, and `.pdf` for printing, sharing, or offline keeping.
+> 📄 **md와 pdf는 내용이 똑같습니다.** 화면에서 보기엔 `.md`, 인쇄·공유·오프라인 보관엔 `.pdf`가 편합니다.
 
-### If you can't find the downloaded file
+### 다운로드한 파일을 못 찾겠다면
 
-- **Open the Downloads folder**: press `Windows key + E` (File Explorer) → click **`Downloads`** on the left.
-- **Find what you just downloaded**: sort by **`Date modified`** so the newest is on top.
-- **Search by name**: type `PC-Spec_Checker` into the taskbar search box (the magnifier).
-
----
-
-## 16. Troubleshooting / Error handling
-
-Find your symptom below.
-
-### ① A blue "Windows protected your PC" window appears
-→ This is normal. Click **`More info`** → **`Run anyway`**. ([8-2](#8-2-when-windows-shows-a-security-warning-this-is-normal))
-
-### ② I double-clicked but the black window **flashed and closed instantly**
-→ Usually one of these:
-- You ran it **without extracting** (from inside the ZIP) → **Extract** the ZIP first, then run.
-- Antivirus blocked it → check your antivirus quarantine/block list and trust it.
-- To see for sure: open **PowerShell** in the file's folder and run it directly.
-  (In the folder, `Shift + right-click` an empty area → **`Open PowerShell window here`** → type `.\PC-Spec_Checker.bat` → Enter.)
-  This keeps any error message visible so you can see the cause.
-
-### ③ Text looks garbled (`□□□` or strange characters)
-→ This tool outputs in English using UTF-8 (`chcp 65001`). It's usually fine, but old console settings may garble it.
-Running it in **Windows Terminal** (default on Windows 11) gives the cleanest result.
-
-### ④ A program I definitely installed shows as `[X] not installed`
-→ The tool checks **common install paths, your PATH, and the registry**.
-If you installed it in an unusual folder or it's not on PATH, it may not be found.
-Adding that program to your **system PATH** fixes detection. (The program itself still works fine.)
-
-### ⑤ CPU temperature shows `N/A (admin required)`
-→ Reading the temperature sensor needs **administrator rights**.
-Right-click the file → **`Run as administrator`** and it may appear.
-(Even as admin, some PCs have no supported sensor and show N/A — that's normal.)
-
-### ⑥ The scan is very slow
-→ The **Full Scan (1)** checks 193 tools and many sensors, so it can take **30–60 seconds**.
-Individual menus (e.g. 3 for CPU only) are much faster. In a hurry, pick only the items you need.
-
-### ⑦ It doesn't work on Mac / Linux
-→ This tool is **Windows only**. It does not run on Mac or Linux. ([4. Prerequisites](#4-prerequisites--required-programs))
-
-### ⑧ "Internet response time" shows `Slow` or nothing
-→ Your internet is slow or disconnected. This is not a tool problem.
-Everything else works fine without internet.
-
-### ⑨ Too many results — I can't scroll back up
-→ Scroll up with the window's scroll bar or the mouse wheel.
-Or save to a file using "Save results to a text file" in [14. Commands](#14-commands) and read it slowly.
+- **다운로드 폴더 열기**: 키보드 `윈도우키 + E`(파일 탐색기) → 왼쪽에서 **`다운로드`(Downloads)** 클릭.
+- **방금 받은 파일 찾기**: 파일 탐색기에서 정렬을 **`수정한 날짜`** 로 바꾸면 최근 파일이 위로 옵니다.
+- **파일 이름으로 검색**: 작업표시줄 검색창(돋보기)에 `PC-Spec_Checker` 입력.
 
 ---
 
-## 17. Frequently Asked Questions (FAQ)
+## 16. 문제 대처 / 오류 대처
 
-**Q. Is it safe to run?**
-A. Yes. The tool **only reads info — it does not install, change, or send anything**.
-The source code is right inside the `.bat` file; open it with Notepad to verify. ([20. Safety](#20-safety--privacy))
+증상별로 찾아보세요.
 
-**Q. Do I need administrator rights?**
-A. No. Most things work without them. Only a few (like CPU temperature) show `N/A`.
+### ① "Windows가 PC를 보호했습니다" 파란 창이 떠요
+→ 정상입니다. **`추가 정보`** → **`실행`** 클릭. ([8-2](#8-2-windows-보안-경고가-뜰-때-정상입니다))
 
-**Q. Does it work on Windows 10?**
-A. Yes. Both Windows 10 and 11 are supported.
+### ② 두 번 클릭했는데 검은 창이 **번쩍 떴다가 바로 닫혀요**
+→ 보통 다음 중 하나입니다.
+- **압축을 안 풀고** ZIP 안에서 바로 실행한 경우 → ZIP을 먼저 **압축 풀기** 후 실행.
+- 백신이 막은 경우 → 백신의 격리/차단 목록 확인, 신뢰 처리.
+- 확실히 보려면: 파일이 있는 폴더에서 **PowerShell**을 열고 직접 실행하세요.
+  (폴더 빈 곳에서 `Shift + 마우스 오른쪽 클릭` → **`PowerShell 창 열기`** → `.\PC-Spec_Checker.bat` 입력 → Enter)
+  이러면 오류 메시지가 창에 남아 원인을 볼 수 있습니다.
 
-**Q. Do I need internet?**
-A. No. It works without it. With internet you only additionally see "internet response time."
+### ③ 글자가 깨져서 `□□□` 또는 이상한 문자로 보여요
+→ 이 도구는 영어로 출력되며 UTF-8(`chcp 65001`)을 사용합니다. 보통 문제가 없지만,
+오래된 콘솔 설정에서 깨질 수 있습니다. **Windows Terminal**(Windows 11 기본)에서 실행하면 가장 깔끔합니다.
 
-**Q. Where is my personal data sent?**
-A. **Nowhere.** The only network action is a single connectivity ping (`8.8.8.8`), which sends no data.
+### ④ 분명히 설치한 프로그램이 `[X] not installed`로 나와요
+→ 이 도구는 **자주 쓰는 설치 경로와 PATH, 레지스트리**를 확인합니다.
+특이한 폴더에 설치했거나 PATH에 없으면 못 찾을 수 있습니다.
+해당 프로그램을 **시스템 PATH에 추가**하면 정상 인식됩니다. (그래도 프로그램 자체는 잘 작동합니다.)
 
-**Q. Does it leave any files or traces?**
-A. No. The tool creates no files at all.
+### ⑤ CPU 온도가 `N/A (admin required)` 로 나와요
+→ 온도 센서 조회는 **관리자 권한**이 필요합니다.
+파일에 오른쪽 클릭 → **`관리자 권한으로 실행`** 하면 표시될 수 있습니다.
+(관리자로 해도 일부 PC는 센서 미지원으로 N/A일 수 있습니다 — 정상입니다.)
 
-**Q. What does "found in PATH" mean?**
-A. The tool is installed but only its version number couldn't be read. It works fine.
+### ⑥ 스캔이 너무 느려요
+→ **전체 스캔(1번)** 은 193개 도구와 여러 센서를 확인해 **30~60초** 걸릴 수 있습니다.
+개별 메뉴(예: 3번 CPU만)는 훨씬 빠릅니다. 급하면 필요한 항목만 고르세요.
 
-**Q. My antivirus warns it's dangerous.**
-A. Because it's a `.bat` file, some antivirus reacts sensitively (false positive). You can read the code yourself, so trust it if needed.
+### ⑦ Mac(맥북) / Linux에서 안 돼요
+→ 이 도구는 **Windows 전용**입니다. Mac·Linux에서는 작동하지 않습니다. ([4. 사전 준비물](#4-사전-준비물--필요-프로그램))
+
+### ⑧ "인터넷 응답시간"이 `Slow` 또는 표시가 안 돼요
+→ 인터넷이 느리거나 연결이 없을 때입니다. 도구의 문제는 아닙니다.
+인터넷이 없어도 나머지 기능은 모두 정상 작동합니다.
+
+### ⑨ 결과가 너무 많아서 위로 못 봐요
+→ 검은 창의 스크롤바를 올리거나 마우스 휠로 올려서 보세요.
+또는 [14. 명령어](#14-명령어)의 "결과를 텍스트 파일로 저장"으로 파일에 담아 천천히 보세요.
 
 ---
 
-## 18. Glossary (plain language)
+## 17. 자주 묻는 질문 (FAQ)
 
-| Term | Plain explanation |
+**Q. 실행해도 안전한가요?**
+A. 네. 이 도구는 **설치·변경·전송을 하지 않고, 정보를 읽기만** 합니다.
+소스 코드가 `.bat` 파일에 그대로 들어 있어 메모장으로 직접 확인할 수 있습니다. ([20. 안전](#20-안전--개인정보))
+
+**Q. 관리자 권한이 꼭 필요한가요?**
+A. 아니요. 권한 없이도 대부분 작동합니다. CPU 온도 등 일부만 `N/A`로 표시됩니다.
+
+**Q. Windows 10에서도 되나요?**
+A. 네. Windows 10과 11 모두 지원합니다.
+
+**Q. 인터넷이 꼭 있어야 하나요?**
+A. 아니요. 없어도 됩니다. 있으면 "인터넷 응답속도" 항목만 추가로 보입니다.
+
+**Q. 제 개인정보가 어디로 전송되나요?**
+A. **전송되지 않습니다.** 유일한 네트워크 동작은 인터넷 연결 확인용 핑 1회(`8.8.8.8`)뿐이며, 정보를 보내지 않습니다.
+
+**Q. 파일이나 흔적이 남나요?**
+A. 아니요. 이 도구는 어떤 파일도 만들지 않습니다.
+
+**Q. "found in PATH"는 무슨 뜻인가요?**
+A. 도구는 설치돼 있는데 버전 숫자만 못 읽었다는 뜻입니다. 정상 작동합니다.
+
+**Q. 백신이 위험하다고 경고해요.**
+A. `.bat` 파일이라 일부 백신이 민감하게 반응할 수 있습니다(오탐). 코드를 직접 확인할 수 있으니 안심하고, 필요하면 신뢰 처리하세요.
+
+---
+
+## 18. 용어 설명 (처음 보는 단어 쉽게)
+
+| 용어 | 쉬운 설명 |
 |---|---|
-| **CPU** | The computer's brain. Handles all calculations. |
-| **Core** | The number of workers inside the CPU. More = more done at once. |
-| **Thread** | A stream of work each core handles at once. Usually 2× the cores. |
-| **RAM** | The computer's work desk. Wider = runs more programs at once. |
-| **DDR4 / DDR5** | RAM generations. DDR5 is faster than DDR4. |
-| **GPU (graphics card)** | Handles screen, games, video, and AI work. |
-| **VRAM** | The graphics card's own memory. More = better for high-res work. |
-| **SSD** | Fast storage. Quick boot and program launch. |
-| **HDD** | Slow but high-capacity storage (hard disk). |
-| **NVMe** | The fastest kind of SSD (much faster than a regular SSD). |
-| **BIOS** | The first basic program that runs when the computer turns on. |
-| **Motherboard** | The big board everything plugs into (the computer's body). |
-| **PATH** | The computer's address book for finding programs. Registered ones run anywhere. |
-| **Driver** | The software that makes a part work (e.g. graphics driver). |
-| **Antivirus** | A security program that blocks malware. |
-| **Firewall** | A security wall that blocks outside intrusion. |
-| **UAC** | The security feature that asks "Allow?" when a program tries to change the system. |
-| **BitLocker** | Windows' disk encryption feature. |
-| **WSL** | A feature to run Linux inside Windows (for developers). |
-| **Git** | A tool that manages code change history (a developer's "undo"). |
-| **Node.js** | A tool that runs JavaScript on your PC (essential for web dev). |
-| **Docker** | A tool that runs programs in isolated environments. |
-| **IDE / editor** | A specialized program for writing code (like VS Code). |
-| **CLI** | Using a tool by typing commands (the black window). |
-| **.bat file** | A Windows script file that runs commands automatically. |
-| **PowerShell** | A powerful command tool built into Windows. |
-| **ping** | A signal that checks if something responds ("are you there?"). |
+| **CPU** | 컴퓨터의 두뇌. 모든 계산을 처리합니다. |
+| **코어(Core)** | CPU 안의 일꾼 수. 많을수록 동시에 더 많은 일을 합니다. |
+| **스레드(Thread)** | 각 코어가 동시에 처리하는 작업 줄기. 보통 코어의 2배입니다. |
+| **RAM(램)** | 컴퓨터의 작업 책상. 넓을수록 여러 프로그램을 동시에 잘 돌립니다. |
+| **DDR4 / DDR5** | 램의 세대. DDR5가 DDR4보다 빠릅니다. |
+| **GPU(그래픽카드)** | 화면·게임·영상·AI 작업을 담당하는 부품. |
+| **VRAM** | 그래픽카드 전용 메모리. 클수록 고화질 작업에 유리합니다. |
+| **SSD** | 빠른 저장장치. 부팅·실행이 빠릅니다. |
+| **HDD** | 느리지만 용량이 큰 저장장치(하드디스크). |
+| **NVMe** | 가장 빠른 SSD 종류(일반 SSD보다 훨씬 빠름). |
+| **BIOS** | 컴퓨터가 켜질 때 가장 먼저 작동하는 기본 프로그램. |
+| **메인보드** | 모든 부품을 꽂는 큰 기판(컴퓨터의 몸통). |
+| **PATH** | 컴퓨터가 프로그램을 찾는 주소록. 등록된 프로그램은 어디서든 실행됩니다. |
+| **드라이버** | 부품을 작동시키는 전용 소프트웨어(예: 그래픽 드라이버). |
+| **백신/안티바이러스** | 악성코드를 막아 주는 보안 프로그램. |
+| **방화벽** | 외부의 침입을 막는 보안벽. |
+| **UAC** | 프로그램이 시스템을 바꾸려 할 때 "허용?"이라고 묻는 보안 기능. |
+| **BitLocker** | Windows의 디스크 암호화 기능. |
+| **WSL** | Windows 안에서 Linux를 실행하는 기능(개발자용). |
+| **Git** | 코드 변경 이력을 관리하는 도구(개발자의 "되돌리기"). |
+| **Node.js** | 자바스크립트를 PC에서 실행하게 해 주는 도구(웹 개발 필수). |
+| **Docker** | 프로그램을 격리된 환경에서 실행하는 도구. |
+| **IDE / 에디터** | 코드를 작성하는 전문 프로그램(VS Code 등). |
+| **CLI** | 키보드로 명령을 입력해 쓰는 방식(검은 창). |
+| **.bat 파일** | Windows에서 명령을 자동 실행하는 스크립트 파일. |
+| **PowerShell** | Windows에 기본 내장된 강력한 명령 도구. |
+| **핑(ping)** | 상대가 응답하는지 확인하는 신호("거기 있어?"). |
 
 ---
 
-## 19. For people who code with AI
+## 19. AI로 코딩하는 분들을 위한 안내
 
-It's especially useful if you code with AI tools like ChatGPT, Claude, Cursor, or Copilot.
+ChatGPT·Claude·Cursor·Copilot 같은 AI 도구로 코딩한다면 특히 유용합니다.
 
-- **Check your environment**: AI told you to run `npm install` but it fails?
-  Use **item 13 (Dev Tools)** to check if Node.js and npm are installed.
-- **Tell the AI about your environment**: copy the full-scan (item 1) results and paste them to the AI,
-  and it can give precise guidance tailored to your PC.
-- **See what to install**: **item 15 (Score)** recommends the tools you're missing.
-
----
-
-## 20. Safety / Privacy
-
-This tool does **NOT**:
-
-- ❌ install anything.
-- ❌ change any settings.
-- ❌ create or delete any files.
-- ❌ send your data anywhere.
-
-All this tool does is:
-
-- ✅ **read** your PC info using built-in Windows features
-- ✅ **show** it in the window
-
-> The only network action is a single connectivity **ping (`8.8.8.8`)**, and it sends no personal data.
-> **The entire source code is inside the `.bat` file.** Open it with Notepad to verify.
+- **환경 점검**: AI가 "`npm install` 하세요"라고 했는데 안 되나요?
+  **13번(개발 도구)** 으로 Node.js·npm이 깔렸는지 확인하세요.
+- **AI에게 내 환경 알려 주기**: 전체 스캔(1번) 결과를 복사해 AI에게 붙여넣으면,
+  AI가 내 PC에 맞는 정확한 안내를 해 줍니다.
+- **뭘 깔아야 할지 확인**: **15번(점수)** 을 보면 부족한 도구를 추천해 줍니다.
 
 ---
 
-## 21. License / Copyright / Commercial use
+## 20. 안전 / 개인정보
 
-> **Simple one-line summary:** Anyone may **use, modify, redistribute, and even use it commercially — for free**.
-> Just **keep the copyright notice and a copy of the license**, and note it comes with **no warranty (use at your own risk)**.
+이 도구는 다음을 **하지 않습니다.**
 
-**Precise legal terms:**
+- ❌ 아무것도 **설치하지 않습니다.**
+- ❌ 어떤 설정도 **변경하지 않습니다.**
+- ❌ 어떤 파일도 **만들거나 지우지 않습니다.**
+- ❌ 내 정보를 어디로도 **전송하지 않습니다.**
 
-- **Copyright**: Copyright 2026 **SoDam AI Studio**. All rights reserved under the terms below.
-- **License**: This project is distributed under the **Apache License, Version 2.0**.
-  The full text is in the [`LICENSE`](./LICENSE) file in this folder, and the original is at http://www.apache.org/licenses/LICENSE-2.0
+이 도구가 하는 일은 오직:
 
-### ✅ What you may do
+- ✅ Windows 내장 기능으로 내 PC 정보를 **읽고**
+- ✅ 화면(검은 창)에 **보여 주기**
 
-- **Use**: anyone — individuals, companies, organizations — for any purpose.
-- **Copy / distribute**: copy it as-is or in part and give it to others.
-- **Modify / derivative works**: edit the code or combine it into a new tool.
-- **Commercial use**: include it in company work, paid services, or products — **commercial use is allowed** (no separate permission or royalty needed).
-
-### 📌 Obligations (when you distribute/redistribute)
-
-1. **Include a copy of the license**: give recipients a copy of `LICENSE` (Apache 2.0).
-2. **Keep notices**: do **not** remove the original copyright, patent, trademark, or attribution notices.
-3. **State changes**: if you modified files, **prominently mark them as "changed."**
-4. **Keep NOTICE**: include the attribution notices from the [`NOTICE`](./NOTICE) file in your distribution.
-
-### 🚫 Cautions / prohibitions
-
-- **No trademark rights are granted.** You may not use names/logos like "SoDam AI Studio" or "PC Spec Checker" **as if they were your own product** (mentioning the origin is fine).
-- **Patent clause**: a patent license from contributors is included, but if you **file a patent lawsuit** against this project, your granted patent rights terminate.
-
-### ⚠️ Warranty / liability (disclaimer)
-
-- This tool is provided **"AS IS"**, with **no warranty whatsoever** (including merchantability, fitness for a particular purpose, and non-infringement).
-- The copyright holder and contributors are **not liable for any damages** arising from its use.
-- Deciding whether and how to use it, and the associated risk, is **your own responsibility**.
-
-### 🧩 Third-party components
-
-- This tool does **not bundle or redistribute any third-party code/libraries**.
-- At run time it uses only Windows built-in features (PowerShell, WMI/CIM, registry), which are already part of your Windows and governed by **Microsoft's license** (not redistributed by this project).
+> 유일한 네트워크 동작은 "인터넷이 되나?" 확인용 **핑 1회(`8.8.8.8`)** 이며, 개인정보를 보내지 않습니다.
+> **소스 코드 전체가 `.bat` 파일 안에 그대로 들어 있습니다.** 메모장으로 열어 직접 확인하세요.
 
 ---
 
-## 22. Changelog
+## 21. 라이선스 / 저작권 / 상업적 이용
 
-### v3.0 (current)
-- Expanded the menu from 9 to **15** items (+ item 0 to exit)
-- Greatly expanded the dev-tools scan from ~50 to **193 tools** (17 categories)
-- Added: Battery/Power, Security Status, Startup Programs, Audio/USB/Bluetooth, Installed Apps
-- Added: Node version managers, Python ecosystem tools, AI coding tools, Cloud CLIs, Linters/Formatters
-- Score system upgrade: 5 categories (was 3) + letter grades (S/A/B/C/D) + weakness analysis
-- Better handling of tools that emit errors; improved wildcard resolution for version-specific install paths
+> **쉬운 한 줄 요약:** 누구나 **무료로 쓰고, 고치고, 다시 배포하고, 상업적으로도 사용**할 수 있습니다.
+> 단, **저작권 표시와 라이선스 사본을 함께 두어야** 하고, **무보증(본인 책임)** 입니다.
+
+**정확한 법적 사항:**
+
+- **저작권**: Copyright 2026 **SoDam AI Studio**. All rights reserved under the terms below.
+- **라이선스**: 이 프로젝트는 **Apache License, Version 2.0** 으로 배포됩니다.
+  전문은 같은 폴더의 [`LICENSE`](./LICENSE) 파일에 있고, 원문은 http://www.apache.org/licenses/LICENSE-2.0 에서 볼 수 있습니다.
+
+### ✅ 허용되는 것 (할 수 있는 것)
+
+- **사용**: 개인·회사·기관 누구나, 목적 제한 없이 사용.
+- **복사·배포**: 그대로 또는 일부를 복사해 나눠 주기.
+- **수정·2차 저작물**: 코드를 고치거나 합쳐 새 도구 만들기.
+- **상업적 이용**: 회사 업무·유료 서비스·제품에 포함 등 **상업적 사용 가능**(별도 허가·로열티 불필요).
+
+### 📌 지켜야 할 의무 (배포·재배포할 때)
+
+1. **라이선스 사본 포함**: 받은 사람에게 `LICENSE`(Apache 2.0) 사본을 함께 제공.
+2. **저작권·고지 유지**: 원본의 저작권·특허·상표·귀속 고지를 **삭제하지 말 것**.
+3. **변경 사실 표시**: 파일을 수정했다면 **"변경함"** 을 눈에 띄게 표시.
+4. **NOTICE 유지**: 배포물에 [`NOTICE`](./NOTICE) 파일의 귀속 고지를 **그대로 포함**.
+
+### 🚫 주의·금지
+
+- **상표권은 부여되지 않습니다.** "SoDam AI Studio", "PC Spec Checker" 같은 **이름·로고를 자신의 제품인 양** 사용·홍보할 수 없습니다(출처를 밝히는 정도의 언급은 허용).
+- **특허 조항**: 기여자의 특허 사용권이 함께 부여되지만, 이 프로젝트를 상대로 **특허 소송을 제기하면** 부여된 특허 권리가 종료됩니다.
+
+### ⚠️ 보증·책임 (면책)
+
+- 이 도구는 **"있는 그대로(AS IS)"** 제공되며, **어떠한 보증도 없습니다**(상품성·특정 목적 적합성·비침해 포함).
+- 사용으로 인한 **어떤 손해에 대해서도 저작권자·기여자는 책임지지 않습니다.**
+- 사용 여부·방법의 판단과 그에 따른 위험은 **사용자 본인의 책임**입니다.
+
+### 🧩 제3자 구성요소
+
+- 이 도구는 **제3자 코드/라이브러리를 번들·재배포하지 않습니다.**
+- 실행 시 Windows 내장 기능(PowerShell·WMI/CIM·레지스트리)만 사용하며, 이는 사용자의 Windows에 이미 포함된 것으로 **Microsoft의 라이선스**를 따릅니다(이 프로젝트가 재배포하지 않음).
+
+---
+
+## 22. 변경 이력
+
+### v3.0 (현재)
+- 메뉴 9개 → **15개**로 확장 (+0번 종료)
+- 개발 도구 스캔을 약 50개 → **193개**(17개 분류)로 대폭 확장
+- 추가: 배터리/전원, 보안 상태, 시작 프로그램, 오디오/USB/블루투스, 설치된 앱
+- 추가: Node 버전 매니저, Python 생태계 도구, AI 코딩 도구, 클라우드 CLI, 린터/포매터
+- 점수 시스템 업그레이드: 5개 항목(기존 3개) + 등급제(S/A/B/C/D) + 약점 분석
+- 에러를 출력하는 도구에 대한 처리 개선, 버전별 설치 경로(와일드카드) 해석 개선
 
 ### v2.2
-- Deep detection engine (PATH + known paths + registry)
-- 50+ dev tools, score system (100 points, 3 categories)
+- 딥 탐지 엔진(PATH + 알려진 경로 + 레지스트리)
+- 50개 이상 개발 도구, 점수 시스템(100점, 3개 항목)
 
 ---
 
-## 23. How to contribute
+## 23. 기여 방법
 
-If you find a tool that isn't detected, or know a common install path that's missing, contributions are welcome.
+탐지되지 않는 도구를 발견했거나, 빠진 설치 경로를 알고 있다면 환영합니다.
 
-- Open an **Issue** (problem/suggestion) or a **Pull Request** (proposed edit) on the GitHub repository.
-- Contributions are considered to be provided under the same **Apache License 2.0** as this project.
-
----
-
-## 24. Contact / Support
-
-- Project: **PC Spec Checker** (by SoDam AI Studio)
-- Repository: `https://github.com/sodam-ai/PC-Spec_Checker`
-- Questions / bug reports: use the **Issues** tab on the repository above.
+- GitHub 저장소에서 **Issue**(문제·제안) 또는 **Pull Request**(직접 수정 제안)를 열어 주세요.
+- 기여하신 내용은 이 프로젝트와 동일한 **Apache License 2.0** 조건으로 제공되는 것으로 간주됩니다.
 
 ---
 
-*This document (GUIDE.md) and its PDF version (GUIDE.pdf) have identical content.*
-*Reference version: PC Spec Checker v3.0 · License: Apache License 2.0 · © 2026 SoDam AI Studio*
+## 24. 연락 / 지원
+
+- 프로젝트: **PC Spec Checker** (제작: SoDam AI Studio)
+- 저장소: `https://github.com/sodam-ai/PC-Spec_Checker`
+- 문의·버그 신고: 위 저장소의 **Issues** 탭을 이용하세요.
+
+---
+
+*이 문서(GUIDE.md)와 PDF판(GUIDE.pdf)의 내용은 동일합니다.*
+*문서 기준 버전: PC Spec Checker v3.0 · 라이선스: Apache License 2.0 · © 2026 SoDam AI Studio*

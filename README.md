@@ -1,110 +1,110 @@
 # PC Spec Checker v3.0
 
-**One double-click to see everything about your PC.**
+**더블클릭 한 번으로 내 PC의 모든 것을 확인하세요.**
 
-No installation · No coding · No technical knowledge needed.
-Just download one file, double-click it, and instantly see your full PC specs.
+설치 필요 없음 · 코딩 필요 없음 · 전문 지식 필요 없음.
+파일 하나만 다운로드해서 더블클릭하면, 내 PC 사양을 바로 확인할 수 있습니다.
 
-> 🌐 [Korean version (한국어 버전)](./README.ko.md)
-> 📘 **New here? → Read the [Complete Beginner's Guide (GUIDE.md)](./GUIDE.md)** (PDF: `GUIDE.pdf`)
-
----
-
-## What is this?
-
-PC Spec Checker is a single `.bat` file that scans your Windows PC and shows you:
-
-- What CPU, RAM, GPU, and storage you have
-- How healthy your disk drives are
-- What software and developer tools are installed (auto-checks **up to 193 tools**)
-- A **score out of 100** rating your PC's development readiness
-
-Think of it as a **free, instant health checkup for your computer**.
-
-> 🔒 **It's safe.** The tool does not install, change, or transmit anything — it only **reads** your PC info.
-> The full source code is inside the `.bat` file; open it with Notepad to verify.
+> 🌐 [English version (영어 버전)](./README.en.md)
+> 📘 **처음이신가요? → [완전 초보자 가이드 (GUIDE.md)](./GUIDE.md)** 를 보세요. (PDF: `GUIDE.pdf`)
 
 ---
 
-## Quick start (3 steps)
+## 이게 뭔가요?
 
-1. **Download** — On GitHub click the green **`Code`** button → **`Download ZIP`** → extract it.
-   (Or just grab the single `PC-Spec_Checker.bat` file.)
-2. **Run** — Double-click **`PC-Spec_Checker.bat`**.
-   If a security warning appears, click **`More info`** → **`Run anyway`**.
-3. **Choose** — Type **`1`** in the menu and press Enter → all specs appear at once.
+PC Spec Checker는 `.bat` 파일 **하나**로 내 Windows PC를 스캔해서 보여주는 도구입니다.
 
-No installation, no account, no internet required.
+- CPU, RAM, GPU, 저장장치가 무엇인지
+- 디스크 건강 상태는 어떤지
+- 어떤 소프트웨어와 개발 도구가 설치되어 있는지 (**최대 193개** 자동 점검)
+- 내 PC가 개발에 얼마나 적합한지 **100점 만점 점수화**
+
+쉽게 말하면, **내 컴퓨터 무료 건강검진**입니다.
+
+> 🔒 **안전합니다.** 이 도구는 설치·변경·전송을 하지 않고 **PC 정보를 읽기만** 합니다.
+> 소스 코드가 `.bat` 파일에 그대로 들어 있어 메모장으로 직접 확인할 수 있습니다.
 
 ---
 
-## What can it check? (15 menu items)
+## 빠른 시작 (3단계)
 
-| # | Menu | What you'll see |
+1. **다운로드** — GitHub에서 초록색 **`Code`** 버튼 → **`Download ZIP`** → 압축 풀기.
+   (또는 `PC-Spec_Checker.bat` 파일 하나만 받아도 됩니다.)
+2. **실행** — **`PC-Spec_Checker.bat`** 를 더블클릭.
+   보안 경고가 뜨면 **`추가 정보`** → **`실행`** 클릭.
+3. **선택** — 메뉴에서 **`1`** 입력 후 Enter → 전체 사양이 한 번에 표시됩니다.
+
+설치도, 계정도, 인터넷도 필요 없습니다.
+
+---
+
+## 무엇을 확인할 수 있나요? (15개 메뉴)
+
+| # | 메뉴 | 확인 내용 |
 |---|---|---|
-| 1 | Show ALL ⭐ | A full scan of everything below |
-| 2 | Basic Info | PC name, Windows version, motherboard, BIOS |
-| 3 | CPU | Name, cores, speed, temperature |
-| 4 | RAM | Total + each stick (size/type/speed) |
-| 5 | Disk | SSD/HDD type, health status, free space |
-| 6 | GPU | Graphics card, VRAM, driver |
-| 7 | Network + Display | IP address, internet response time, monitors |
-| 8 | Battery | Charge level, battery health (laptops) |
-| 9 | Security | Antivirus, firewall, UAC, BitLocker |
-| 10 | Startup Programs | Apps that run at boot |
-| 11 | Audio / USB / Bluetooth | Connected devices |
-| 12 | Installed Apps | Browsers, office, media, etc. (8 categories) |
-| 13 | Dev Tools | Deep scan of **193 tools** (17 categories) |
-| 14 | WSL | Windows Subsystem for Linux status |
-| 15 | Score | Rating out of 100 + recommendations |
-| 0 | Exit | Close the tool |
+| 1 | 전체 스캔 ⭐ | 아래 모든 항목을 한 번에 |
+| 2 | 기본 정보 | PC 이름, Windows 버전, 메인보드, BIOS |
+| 3 | CPU | 이름, 코어 수, 클럭, 온도 |
+| 4 | RAM | 총 용량, 램 한 개씩(용량/종류/속도) |
+| 5 | 디스크 | SSD/HDD 종류, 건강 상태, 남은 용량 |
+| 6 | GPU | 그래픽카드, VRAM, 드라이버 |
+| 7 | 네트워크 + 디스플레이 | IP 주소, 인터넷 응답속도, 모니터 |
+| 8 | 배터리 | 충전량, 배터리 건강(노트북) |
+| 9 | 보안 상태 | 백신, 방화벽, UAC, BitLocker |
+| 10 | 시작 프로그램 | 부팅 시 자동 실행 목록 |
+| 11 | 오디오 / USB / 블루투스 | 연결된 장치 |
+| 12 | 설치된 앱 | 브라우저·오피스·미디어 등 8분류 |
+| 13 | 개발 도구 | **193개** 도구 정밀 스캔 (17분류) |
+| 14 | WSL | 윈도우 속 리눅스 상태 |
+| 15 | 점수 | 100점 만점 등급 + 개선 추천 |
+| 0 | 종료 | 도구 닫기 |
 
-See the **[Complete Beginner's Guide](./GUIDE.md)** for a detailed explanation of each item.
+각 항목의 자세한 설명은 **[완전 초보자 가이드](./GUIDE.md)** 를 참고하세요.
 
 ---
 
-## The score system
+## 점수 시스템
 
-Your PC is rated out of **100 points across 5 categories**.
+PC를 **5개 항목 100점 만점**으로 평가합니다.
 
-| Category | Max | What's measured |
+| 항목 | 최대 점수 | 기준 |
 |---|---|---|
-| CPU | 20 | Core count (8+ = full marks) |
-| RAM | 20 | Total memory (32GB+ = full marks) |
-| Storage | 15 | SSD/NVMe type + free space |
-| GPU | 10 | Dedicated GPU + VRAM size |
-| Dev Tools | 35 | Essential tools installed |
+| CPU | 20 | 8코어 이상 = 만점 |
+| RAM | 20 | 32GB 이상 = 만점 |
+| 저장장치 | 15 | SSD/NVMe + 남은 용량 |
+| GPU | 10 | 전용 GPU + VRAM 크기 |
+| 개발 도구 | 35 | 필수 도구 설치 여부 |
 
-**Grades**: S(85–100) · A(70–84) · B(55–69) · C(40–54) · D(0–39)
-Specific weaknesses and recommendations are shown below the score.
+**등급**: S(85~100) · A(70~84) · B(55~69) · C(40~54) · D(0~39)
+점수 아래에 부족한 부분과 개선 추천이 함께 표시됩니다.
 
 ---
 
-## Prerequisites
+## 사전 준비물
 
-| Item | Required? |
+| 항목 | 필요 여부 |
 |---|---|
-| Windows 10 / 11 | ✅ Required (no Mac/Linux) |
-| PowerShell | ✅ Required but **built into Windows** |
-| Internet | 🔵 Optional (works without it) |
-| Administrator rights | 🔵 Optional (a few temps show N/A without) |
-| Extra installs | ❌ Not needed |
+| Windows 10 / 11 | ✅ 필수 (Mac·Linux 불가) |
+| PowerShell | ✅ 필수지만 Windows에 **기본 내장** |
+| 인터넷 | 🔵 선택 (없어도 작동) |
+| 관리자 권한 | 🔵 선택 (없어도 작동, 일부 온도만 N/A) |
+| 추가 설치 | ❌ 불필요 |
 
 ---
 
-## FAQ
+## 자주 묻는 질문
 
-- **Is it safe?** → Yes. It only reads info — no install, change, or transmission.
-- **Need admin rights?** → No. Only a few temperatures show `N/A`.
-- **Works on Windows 10?** → Yes, both 10 and 11.
-- **Works on Mac/Linux?** → No, Windows only.
-- **It's slow** → A full scan can take 30–60 seconds.
+- **안전한가요?** → 네. 설치·변경·전송 없이 정보를 읽기만 합니다.
+- **관리자 권한 필요?** → 아니요. 일부 온도만 `N/A`로 표시됩니다.
+- **Windows 10에서 되나요?** → 네, 10과 11 모두 지원.
+- **Mac/Linux에서 되나요?** → 아니요, Windows 전용입니다.
+- **느려요** → 전체 스캔은 30~60초 걸릴 수 있습니다.
 
-More questions and fixes are in the **[guide's troubleshooting section](./GUIDE.md#16-troubleshooting--error-handling)**.
+더 많은 질문과 문제 해결은 **[가이드의 문제 대처](./GUIDE.md#16-문제-대처--오류-대처)** 를 참고하세요.
 
 ---
 
-## Example output
+## 예시 출력
 
 ```
   ====================================================
@@ -127,31 +127,31 @@ More questions and fixes are in the **[guide's troubleshooting section](./GUIDE.
 
 ---
 
-## Documents
+## 문서
 
-| Document | Description |
+| 문서 | 설명 |
 |---|---|
-| [README.md](./README.md) / [README.ko.md](./README.ko.md) | EN/KO intro (this file) |
-| [GUIDE.md](./GUIDE.md) / [GUIDE.ko.md](./GUIDE.ko.md) | EN/KO complete beginner's guide |
-| `*.pdf` | PDF versions of the above (identical content) |
-| [LICENSE](./LICENSE) / [NOTICE](./NOTICE) | Full license / copyright notice |
+| [README.md](./README.md) / [README.en.md](./README.en.md) | 한/영 소개 (지금 이 문서) |
+| [GUIDE.md](./GUIDE.md) / [GUIDE.en.md](./GUIDE.en.md) | 한/영 완전 초보자 가이드 |
+| `*.pdf` | 위 문서들의 PDF판 (내용 동일) |
+| [LICENSE](./LICENSE) / [NOTICE](./NOTICE) | 라이선스 전문 / 저작권 고지 |
 
 ---
 
-## License
+## 라이선스
 
-This project is distributed under the **Apache License 2.0**. © 2026 SoDam AI Studio.
+이 프로젝트는 **Apache License 2.0** 으로 배포됩니다. © 2026 SoDam AI Studio.
 
-- ✅ Anyone may **use, modify, redistribute, and use it commercially — for free**
-- 📌 When redistributing, include the **copyright notice and a copy of the license**, and **mark changes** if modified
-- 🚫 No trademark rights are granted (don't use the name/logo as if it were your own product)
-- ⚠️ Provided **"AS IS"** · **no warranty** · use at your own risk
+- ✅ 누구나 **무료로 사용·수정·재배포·상업적 이용** 가능
+- 📌 단, 재배포 시 **저작권 고지와 라이선스 사본을 함께** 포함하고, 수정 시 **변경 사실 표시**
+- 🚫 상표권은 부여되지 않음 (이름·로고를 자기 제품인 양 사용 금지)
+- ⚠️ "있는 그대로" 제공 · **무보증** · 사용에 따른 책임은 사용자 본인
 
-Full text in [`LICENSE`](./LICENSE); a plain-language explanation is in [guide section 21](./GUIDE.md#21-license--copyright--commercial-use).
+전문은 [`LICENSE`](./LICENSE) 파일, 쉬운 설명은 [가이드 21번](./GUIDE.md#21-라이선스--저작권--상업적-이용) 참고.
 
 ---
 
-## Contributing
+## 기여하기
 
-Found a tool that isn't detected, or a missing install path?
-Open an [Issue](../../issues) or [Pull Request](../../pulls). Contributions are provided under Apache 2.0.
+탐지되지 않는 도구나 빠진 설치 경로를 발견했나요?
+[Issue](../../issues) 또는 [Pull Request](../../pulls)를 열어 주세요. 기여는 Apache 2.0 조건으로 제공됩니다.
