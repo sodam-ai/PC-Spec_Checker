@@ -15,3 +15,6 @@ _verify*.png
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Distribution zip (GitHub provides Download ZIP automatically)
+*.zip
