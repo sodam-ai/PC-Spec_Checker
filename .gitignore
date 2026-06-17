@@ -1,0 +1,17 @@
+# --- Local tooling / plugin artifacts (do NOT commit) ---
+.omc/
+.complexity-log.md
+.todos-report.md/
+.browser-pilot/
+.remember/
+
+# --- Local doc-build temp files (PDFs are generated from the .md) ---
+_tmp_*.html
+_print*.css
+_verify*.png
+*.tmp
+
+# --- OS / editor junk ---
+Thumbs.db
+desktop.ini
+.DS_Store
