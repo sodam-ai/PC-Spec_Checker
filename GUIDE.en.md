@@ -99,20 +99,20 @@ When you double-click it, the computer inspects its own parts and tells you:
 
 ## 5. How to download
 
-This tool is just **one** file: **`PC-Spec_Checker.bat`**.
+This tool is just **one** file: **`pc-spec_checker-kit.bat`**.
 There are two ways to get it.
 
 ### Method A — Get everything from GitHub (recommended)
 
 1. In a web browser (Chrome, Edge, etc.), open the project's GitHub page:
-   `https://github.com/sodam-ai/PC-Spec_Checker`
+   `https://github.com/sodam-ai/pc-spec_checker-kit`
 2. Click the green **`< > Code`** button.
 3. In the menu, click **`Download ZIP`** at the bottom.
-4. A zip file like `PC-Spec_Checker-main.zip` is usually saved to your **`Downloads`** folder.
+4. A zip file like `pc-spec_checker-kit-main.zip` is usually saved to your **`Downloads`** folder.
 
 ### Method B — Get just the one file
 
-If you only received `PC-Spec_Checker.bat`, that single file works completely on its own.
+If you only received `pc-spec_checker-kit.bat`, that single file works completely on its own.
 (No other files are required.)
 
 > 💡 Can't find the downloaded file? → See [15. File locations](#15-file-locations--document-locations).
@@ -125,7 +125,7 @@ If you only received `PC-Spec_Checker.bat`, that single file works completely on
 
 1. Find the downloaded ZIP file. (Usually in the `Downloads` folder.)
 2. **Right-click** the ZIP file → **`Extract All`** (or `압축 풀기`).
-3. Inside the extracted folder you'll find **`PC-Spec_Checker.bat`**.
+3. Inside the extracted folder you'll find **`pc-spec_checker-kit.bat`**.
 
 > ✅ **Recommended location**: put it somewhere you can easily find, like your `Desktop` or `Documents`.
 > ⚠️ **Avoid**: running it directly from inside the ZIP without extracting — it can behave unreliably.
@@ -137,7 +137,7 @@ If you only received `PC-Spec_Checker.bat`, that single file works completely on
 
 The fastest way to see results.
 
-1. **Double-click** the **`PC-Spec_Checker.bat`** file.
+1. **Double-click** the **`pc-spec_checker-kit.bat`** file.
 2. (If a security warning appears) click **`More info`** → **`Run anyway`**. → details in [section 8](#8-how-to-run-in-detail)
 3. When the menu appears in the black window, press **`1`** and **Enter** → all specs appear at once.
 
@@ -149,7 +149,7 @@ The fastest way to see results.
 
 ### 8-1. Basic run (double-click)
 
-**Double-click** the `PC-Spec_Checker.bat` file with your mouse.
+**Double-click** the `pc-spec_checker-kit.bat` file with your mouse.
 A black command window opens and shows the menu.
 
 ### 8-2. When Windows shows a security warning (this is normal)
@@ -161,7 +161,7 @@ The first time you run a `.bat` file downloaded from the internet, Windows may s
   2. Click the **`Run anyway`** button that appears below.
 
 > 🔒 **Why is it safe?** This file is **100% open source**.
-> Open `PC-Spec_Checker.bat` with **Notepad** and you can read every line of code yourself.
+> Open `pc-spec_checker-kit.bat` with **Notepad** and you can read every line of code yourself.
 > The tool only **reads** your PC info — it does not install, change, or send anything. ([20. Safety](#20-safety--privacy))
 
 ### 8-3. Other ways to run
@@ -308,7 +308,7 @@ The basis is "how suitable is it for development (coding)."
 [2] Extract            Right-click the ZIP → "Extract All"
         │
         ▼
-[3] Run                Double-click PC-Spec_Checker.bat
+[3] Run                Double-click pc-spec_checker-kit.bat
         │
         ▼
 [4] Handle warning     "More info" → "Run anyway"  (first time only)
@@ -349,13 +349,13 @@ You can also run it directly from PowerShell or Command Prompt (cmd).
 After navigating to the folder containing the file:
 
 ```bat
-PC-Spec_Checker.bat
+pc-spec_checker-kit.bat
 ```
 
 Or with the full path:
 
 ```bat
-"C:\path\to\your\folder\PC-Spec_Checker.bat"
+"C:\path\to\your\folder\pc-spec_checker-kit.bat"
 ```
 
 ### (Optional) Save results to a text file
@@ -364,7 +364,7 @@ In Command Prompt (cmd), this saves the results to a file.
 (Auto-enters `1` for a full scan and saves to `result.txt`.)
 
 ```bat
-echo 1 | PC-Spec_Checker.bat > result.txt
+echo 1 | pc-spec_checker-kit.bat > result.txt
 ```
 
 > Note: this saves text only, without colors or bar graphs. The simplest way to save is the
@@ -377,8 +377,8 @@ echo 1 | PC-Spec_Checker.bat > result.txt
 ### Files in this project
 
 ```
-PC-Spec_Checker/
-├── PC-Spec_Checker.bat   ← the actual tool (double-click this)
+pc-spec_checker-kit/
+├── pc-spec_checker-kit.bat   ← the actual tool (double-click this)
 ├── LICENSE               ← full license text (Apache 2.0)
 ├── NOTICE                ← copyright notice
 ├── README.md             ← Korean intro (GitHub front page)
@@ -395,7 +395,7 @@ PC-Spec_Checker/
 
 - **Open the Downloads folder**: press `Windows key + E` (File Explorer) → click **`Downloads`** on the left.
 - **Find what you just downloaded**: sort by **`Date modified`** so the newest is on top.
-- **Search by name**: type `PC-Spec_Checker` into the taskbar search box (the magnifier).
+- **Search by name**: type `pc-spec_checker-kit` into the taskbar search box (the magnifier).
 
 ---
 
@@ -411,7 +411,7 @@ Find your symptom below.
 - You ran it **without extracting** (from inside the ZIP) → **Extract** the ZIP first, then run.
 - Antivirus blocked it → check your antivirus quarantine/block list and trust it.
 - To see for sure: open **PowerShell** in the file's folder and run it directly.
-  (In the folder, `Shift + right-click` an empty area → **`Open PowerShell window here`** → type `.\PC-Spec_Checker.bat` → Enter.)
+  (In the folder, `Shift + right-click` an empty area → **`Open PowerShell window here`** → type `.\pc-spec_checker-kit.bat` → Enter.)
   This keeps any error message visible so you can see the cause.
 
 ### ③ Text looks garbled (`□□□` or strange characters)
@@ -610,7 +610,7 @@ If you find a tool that isn't detected, or know a common install path that's mis
 ## 24. Contact / Support
 
 - Project: **PC Spec Checker** (by SoDam AI Studio)
-- Repository: `https://github.com/sodam-ai/PC-Spec_Checker`
+- Repository: `https://github.com/sodam-ai/pc-spec_checker-kit`
 - Questions / bug reports: use the **Issues** tab on the repository above.
 
 ---
