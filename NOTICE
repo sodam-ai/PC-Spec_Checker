@@ -1,0 +1,18 @@
+PC Spec Checker
+Copyright 2026 SoDam AI Studio
+
+This product is licensed under the Apache License, Version 2.0.
+A copy of the License is included in the LICENSE file and is also
+available at http://www.apache.org/licenses/LICENSE-2.0
+
+----------------------------------------------------------------------
+Third-party components
+----------------------------------------------------------------------
+
+PC Spec Checker is a single Windows batch/PowerShell script. It does NOT
+bundle, embed, or redistribute any third-party source code or libraries.
+At run time it uses only components built into Microsoft Windows
+(Windows PowerShell, Windows Management Instrumentation / CIM, and the
+Windows Registry). Those components are part of the user's own Windows
+installation and are governed by Microsoft's own license terms; they are
+neither distributed with nor relicensed by this project.
