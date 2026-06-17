@@ -1,4 +1,4 @@
-# PC Spec Checker v3.0 — Complete Beginner's Guide (English)
+# pc-spec_checker-kit v3.0 — Complete Beginner's Guide (English)
 
 > Made so that even people using a computer, smartphone, AI, or messenger app
 > **for the very first time** can do everything by themselves with just this one document.
@@ -566,7 +566,7 @@ All this tool does is:
 
 ### 🚫 Cautions / prohibitions
 
-- **No trademark rights are granted.** You may not use names/logos like "SoDam AI Studio" or "PC Spec Checker" **as if they were your own product** (mentioning the origin is fine).
+- **No trademark rights are granted.** You may not use names/logos like "SoDam AI Studio" or "pc-spec_checker-kit" **as if they were your own product** (mentioning the origin is fine).
 - **Patent clause**: a patent license from contributors is included, but if you **file a patent lawsuit** against this project, your granted patent rights terminate.
 
 ### ⚠️ Warranty / liability (disclaimer)
@@ -609,11 +609,11 @@ If you find a tool that isn't detected, or know a common install path that's mis
 
 ## 24. Contact / Support
 
-- Project: **PC Spec Checker** (by SoDam AI Studio)
+- Project: **pc-spec_checker-kit** (by SoDam AI Studio)
 - Repository: `https://github.com/sodam-ai/pc-spec_checker-kit`
 - Questions / bug reports: use the **Issues** tab on the repository above.
 
 ---
 
 *This document (GUIDE.en.md) and its PDF version (GUIDE.en.pdf) have identical content.*
-*Reference version: PC Spec Checker v3.0 · License: Apache License 2.0 · © 2026 SoDam AI Studio*
+*Reference version: pc-spec_checker-kit v3.0 · License: Apache License 2.0 · © 2026 SoDam AI Studio*

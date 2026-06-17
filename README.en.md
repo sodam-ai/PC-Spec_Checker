@@ -1,4 +1,4 @@
-# PC Spec Checker v3.0
+# pc-spec_checker-kit v3.0
 
 **One double-click to see everything about your PC.**
 
@@ -12,7 +12,7 @@ Just download one file, double-click it, and instantly see your full PC specs.
 
 ## What is this?
 
-PC Spec Checker is a single `.bat` file that scans your Windows PC and shows you:
+pc-spec_checker-kit is a single `.bat` file that scans your Windows PC and shows you:
 
 - What CPU, RAM, GPU, and storage you have
 - How healthy your disk drives are
@@ -108,7 +108,7 @@ More questions and fixes are in the **[guide's troubleshooting section](./GUIDE.
 
 ```
   ====================================================
-        PC Spec Checker  v3.0
+        pc-spec_checker-kit  v3.0
         Deep Hardware + Dev Tool Scanner
   ====================================================
 

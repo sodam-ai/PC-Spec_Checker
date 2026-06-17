@@ -1,4 +1,4 @@
-PC Spec Checker
+pc-spec_checker-kit
 Copyright 2026 SoDam AI Studio
 
 This product is licensed under the Apache License, Version 2.0.
@@ -9,7 +9,7 @@ available at http://www.apache.org/licenses/LICENSE-2.0
 Third-party components
 ----------------------------------------------------------------------
 
-PC Spec Checker is a single Windows batch/PowerShell script. It does NOT
+pc-spec_checker-kit is a single Windows batch/PowerShell script. It does NOT
 bundle, embed, or redistribute any third-party source code or libraries.
 At run time it uses only components built into Microsoft Windows
 (Windows PowerShell, Windows Management Instrumentation / CIM, and the
