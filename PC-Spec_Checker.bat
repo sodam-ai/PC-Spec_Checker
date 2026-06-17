@@ -269,32 +269,33 @@ function Show-Header {
     Write-Host "  ====================================================" -ForegroundColor Cyan
     Write-Host "        PC Spec Checker  v3.0" -ForegroundColor Yellow
     Write-Host "        Deep Hardware + Dev Tool Scanner" -ForegroundColor DarkGray
+    Write-Host "        내 PC 사양 + 개발 도구 검사기 (English / 한국어)" -ForegroundColor DarkGray
     Write-Host "  ====================================================" -ForegroundColor Cyan
     Write-Host ""
 }
 
 function Show-Menu {
-    Write-Host "  Select what to check:" -ForegroundColor White
+    Write-Host "  Select what to check  /  무엇을 확인할까요?" -ForegroundColor White
     Write-Host ""
-    Write-Host "  [ 1] Show ALL (Full Scan)" -ForegroundColor Green
+    Write-Host "  [ 1] Show ALL (Full Scan)  /  전체 스캔" -ForegroundColor Green
     Write-Host "  ----------------------------------------" -ForegroundColor DarkGray
-    Write-Host "  [ 2] Basic Info + Motherboard + BIOS" -ForegroundColor White
-    Write-Host "  [ 3] CPU (Detailed)" -ForegroundColor White
-    Write-Host "  [ 4] RAM (Each Stick)" -ForegroundColor White
-    Write-Host "  [ 5] Disk (Type + Health)" -ForegroundColor White
-    Write-Host "  [ 6] GPU (Detailed)" -ForegroundColor White
-    Write-Host "  [ 7] Network + Display" -ForegroundColor White
-    Write-Host "  [ 8] Battery / Power" -ForegroundColor White
-    Write-Host "  [ 9] Security Status" -ForegroundColor White
-    Write-Host "  [10] Startup Programs" -ForegroundColor White
-    Write-Host "  [11] Audio / USB / Bluetooth" -ForegroundColor White
-    Write-Host "  [12] Installed Apps" -ForegroundColor White
+    Write-Host "  [ 2] Basic Info + Motherboard + BIOS  /  기본 정보 + 메인보드 + BIOS" -ForegroundColor White
+    Write-Host "  [ 3] CPU (Detailed)  /  CPU (상세)" -ForegroundColor White
+    Write-Host "  [ 4] RAM (Each Stick)  /  RAM 램 (한 개씩)" -ForegroundColor White
+    Write-Host "  [ 5] Disk (Type + Health)  /  디스크 (종류 + 건강)" -ForegroundColor White
+    Write-Host "  [ 6] GPU (Detailed)  /  GPU 그래픽 (상세)" -ForegroundColor White
+    Write-Host "  [ 7] Network + Display  /  네트워크 + 디스플레이" -ForegroundColor White
+    Write-Host "  [ 8] Battery / Power  /  배터리 / 전원" -ForegroundColor White
+    Write-Host "  [ 9] Security Status  /  보안 상태" -ForegroundColor White
+    Write-Host "  [10] Startup Programs  /  시작 프로그램" -ForegroundColor White
+    Write-Host "  [11] Audio / USB / Bluetooth  /  오디오 / USB / 블루투스" -ForegroundColor White
+    Write-Host "  [12] Installed Apps  /  설치된 앱" -ForegroundColor White
     Write-Host "  ----------------------------------------" -ForegroundColor DarkGray
-    Write-Host "  [13] Dev Tools (Full Deep Scan)" -ForegroundColor Yellow
-    Write-Host "  [14] WSL (Linux)" -ForegroundColor White
-    Write-Host "  [15] Score + Recommendations" -ForegroundColor White
+    Write-Host "  [13] Dev Tools (Full Deep Scan)  /  개발 도구 (정밀 스캔)" -ForegroundColor Yellow
+    Write-Host "  [14] WSL (Linux)  /  WSL (윈도우 속 리눅스)" -ForegroundColor White
+    Write-Host "  [15] Score + Recommendations  /  점수 + 추천" -ForegroundColor White
     Write-Host "  ----------------------------------------" -ForegroundColor DarkGray
-    Write-Host "  [ 0] Exit" -ForegroundColor DarkGray
+    Write-Host "  [ 0] Exit  /  종료" -ForegroundColor DarkGray
     Write-Host ""
 }
 
@@ -303,7 +304,7 @@ function Show-Menu {
 # ================================================================
 
 function Get-BasicInfo {
-    Write-Title "Basic Info + Motherboard + BIOS"
+    Write-Title "Basic Info + Motherboard + BIOS  /  기본 정보 + 메인보드 + BIOS"
     try {
         $os = Get-CimInstance Win32_OperatingSystem
         $cs = Get-CimInstance Win32_ComputerSystem
@@ -367,7 +368,7 @@ function Get-BasicInfo {
 }
 
 function Get-CPUInfo {
-    Write-Title "CPU (Detailed)"
+    Write-Title "CPU (Detailed)  /  CPU (상세)"
     try {
         $cpu = Get-CimInstance Win32_Processor
         Write-InfoLine "Name" $cpu.Name.Trim()
@@ -415,7 +416,7 @@ function Get-CPUInfo {
 }
 
 function Get-RAMInfo {
-    Write-Title "RAM (Memory - Each Stick)"
+    Write-Title "RAM (Memory - Each Stick)  /  RAM 메모리 (한 개씩)"
     try {
         $os = Get-CimInstance Win32_OperatingSystem
         $totalGB = [math]::Round($os.TotalVisibleMemorySize / 1MB, 1)
@@ -472,7 +473,7 @@ function Get-RAMInfo {
 }
 
 function Get-DiskInfo {
-    Write-Title "Disk (Type + Health)"
+    Write-Title "Disk (Type + Health)  /  디스크 (종류 + 건강)"
     Write-SubTitle "Physical Drives"
     try {
         $physDisks = Get-CimInstance Win32_DiskDrive | Sort-Object Index
@@ -548,7 +549,7 @@ function Get-DiskInfo {
 }
 
 function Get-GPUInfo {
-    Write-Title "GPU (Detailed)"
+    Write-Title "GPU (Detailed)  /  GPU 그래픽 (상세)"
     try {
         $gpus = Get-CimInstance Win32_VideoController
         $num = 1
@@ -597,7 +598,7 @@ function Get-GPUInfo {
 }
 
 function Get-NetworkInfo {
-    Write-Title "Network (Internet)"
+    Write-Title "Network (Internet)  /  네트워크 (인터넷)"
     try {
         $adapters = Get-CimInstance Win32_NetworkAdapterConfiguration | Where-Object { $_.IPEnabled }
         foreach ($a in $adapters) {
@@ -654,7 +655,7 @@ function Get-NetworkInfo {
 # ================================================================
 
 function Get-BatteryInfo {
-    Write-Title "Battery / Power"
+    Write-Title "Battery / Power  /  배터리 / 전원"
     try {
         $batteries = Get-CimInstance Win32_Battery -ErrorAction SilentlyContinue
         if (-not $batteries) {
@@ -711,7 +712,7 @@ function Get-BatteryInfo {
 }
 
 function Get-SecurityInfo {
-    Write-Title "Security Status"
+    Write-Title "Security Status  /  보안 상태"
     # Windows Defender / Antivirus
     try {
         $av = Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiVirusProduct -ErrorAction Stop
@@ -763,7 +764,7 @@ function Get-SecurityInfo {
 }
 
 function Get-StartupInfo {
-    Write-Title "Startup Programs"
+    Write-Title "Startup Programs  /  시작 프로그램"
     $count = 0
     try {
         # Registry: Current User
@@ -847,7 +848,7 @@ function Get-StartupInfo {
 }
 
 function Get-AudioUsbInfo {
-    Write-Title "Audio / USB / Bluetooth"
+    Write-Title "Audio / USB / Bluetooth  /  오디오 / USB / 블루투스"
 
     Write-SubTitle "Audio Devices"
     try {
@@ -915,7 +916,7 @@ function Get-AudioUsbInfo {
 }
 
 function Get-InstalledApps {
-    Write-Title "Installed Apps (Major)"
+    Write-Title "Installed Apps (Major)  /  설치된 앱 (주요)"
     Write-Host "    Scanning registry..." -ForegroundColor DarkGray
     Write-Host ""
     $regPaths = @(
@@ -968,7 +969,7 @@ function Get-InstalledApps {
 # ================================================================
 
 function Get-DevToolsInfo {
-    Write-Title "Dev Tools (Full Deep Scan - 120+ tools)"
+    Write-Title "Dev Tools (Full Deep Scan)  /  개발 도구 (정밀 스캔)"
     Write-Host "    Scanning PATH + known paths + registry..." -ForegroundColor DarkGray
     Write-Host ""
 
@@ -1890,7 +1891,7 @@ function Get-DevToolsInfo {
 # ================================================================
 
 function Get-WSLInfo {
-    Write-Title "WSL (Windows Subsystem for Linux)"
+    Write-Title "WSL (Windows Subsystem for Linux)  /  WSL (윈도우 속 리눅스)"
     $wslExists = Get-Command 'wsl' -ErrorAction SilentlyContinue
     if (-not $wslExists) {
         Write-Host "    [X] WSL is NOT installed" -ForegroundColor Red
@@ -1981,7 +1982,7 @@ function Get-WSLInfo {
 # ================================================================
 
 function Get-Score {
-    Write-Title "SCORE + Recommendations"
+    Write-Title "SCORE + Recommendations  /  점수 + 추천"
     $score = 0
     $weaknesses = @()
 
@@ -2148,11 +2149,11 @@ try {
     while ($running) {
         Show-Header
         Show-Menu
-        $choice = Read-Host "  Enter number (0-15)"
+        $choice = Read-Host "  Enter number / 번호 입력 (0-15)"
         switch ($choice) {
             '1' {
                 Show-Header
-                Write-Host "  Full system scan... please wait!" -ForegroundColor Yellow
+                Write-Host "  Full system scan... please wait!  /  전체 스캔 중... 잠시만 기다려 주세요!" -ForegroundColor Yellow
                 Write-Host ""
                 Get-BasicInfo
                 Get-CPUInfo
@@ -2168,31 +2169,31 @@ try {
                 Get-DevToolsInfo
                 Get-WSLInfo
                 Get-Score
-                $null = Read-Host "  [Enter] Back to menu"
+                $null = Read-Host "  [Enter] Back to menu / 메뉴로"
             }
-            '2'  { Show-Header; Get-BasicInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '3'  { Show-Header; Get-CPUInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '4'  { Show-Header; Get-RAMInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '5'  { Show-Header; Get-DiskInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '6'  { Show-Header; Get-GPUInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '7'  { Show-Header; Get-NetworkInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '8'  { Show-Header; Get-BatteryInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '9'  { Show-Header; Get-SecurityInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '10' { Show-Header; Get-StartupInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '11' { Show-Header; Get-AudioUsbInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '12' { Show-Header; Get-InstalledApps; $null = Read-Host "  [Enter] Back to menu" }
-            '13' { Show-Header; Get-DevToolsInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '14' { Show-Header; Get-WSLInfo; $null = Read-Host "  [Enter] Back to menu" }
-            '15' { Show-Header; Get-Score; $null = Read-Host "  [Enter] Back to menu" }
+            '2'  { Show-Header; Get-BasicInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '3'  { Show-Header; Get-CPUInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '4'  { Show-Header; Get-RAMInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '5'  { Show-Header; Get-DiskInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '6'  { Show-Header; Get-GPUInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '7'  { Show-Header; Get-NetworkInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '8'  { Show-Header; Get-BatteryInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '9'  { Show-Header; Get-SecurityInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '10' { Show-Header; Get-StartupInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '11' { Show-Header; Get-AudioUsbInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '12' { Show-Header; Get-InstalledApps; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '13' { Show-Header; Get-DevToolsInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '14' { Show-Header; Get-WSLInfo; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
+            '15' { Show-Header; Get-Score; $null = Read-Host "  [Enter] Back to menu / 메뉴로" }
             '0'  { $running = $false }
             default {
-                Write-Host "  Please enter 0-15!" -ForegroundColor Red
+                Write-Host "  Please enter 0-15!  /  0~15 사이 숫자를 입력하세요!" -ForegroundColor Red
                 Start-Sleep -Seconds 1
             }
         }
     }
     Write-Host ""
-    Write-Host "  Goodbye!" -ForegroundColor Cyan
+    Write-Host "  Goodbye!  /  안녕히 가세요!" -ForegroundColor Cyan
     Start-Sleep -Seconds 1
 } catch {
     Write-Host ""
