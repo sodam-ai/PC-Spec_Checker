@@ -29,8 +29,8 @@ Think of it as a **free, instant health checkup for your computer**.
 ## Quick start (3 steps)
 
 1. **Download** — On GitHub click the green **`Code`** button → **`Download ZIP`** → extract it.
-   (Or just grab the single `PC-Spec_Checker.bat` file.)
-2. **Run** — Double-click **`PC-Spec_Checker.bat`**.
+   (Or just grab the single `pc-spec_checker-kit.bat` file.)
+2. **Run** — Double-click **`pc-spec_checker-kit.bat`**.
    If a security warning appears, click **`More info`** → **`Run anyway`**.
 3. **Choose** — Type **`1`** in the menu and press Enter → all specs appear at once.
 
